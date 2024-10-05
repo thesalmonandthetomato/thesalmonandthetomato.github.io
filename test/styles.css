@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+}
+
+.central-logo {
+    position: relative; /* Keep the central logo in place */
+}
+
+.central-logo img {
+    width: 200px; /* Adjust central logo size as needed */
+    transition: transform 0.3s;
+}
+
+.hover-logos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%); /* Center the container */
+}
+
+/* Ensure the hover logos are positioned absolutely around the center */
+.hover-logo {
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.hover-logo img {
+    width: 100px; /* Ensure all logos have the same width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Position logos directly */
+.hover-logo:nth-child(1) { /* Top Left */
+    top: calc(50% - 180px); /* Increased distance from the center */
+    left: calc(50% - 180px); /* Increased distance from the center */
+}
+
+.hover-logo:nth-child(2) { /* Top Right */
+    top: calc(50% - 180px); /* Increased distance from the center */
+    left: calc(50% + 80px); /* Increased distance from the center */
+}
+
+.hover-logo:nth-child(3) { /* Bottom Left */
+    top: calc(50% + 80px); /* Increased distance from the center */
+    left: calc(50% - 180px); /* Increased distance from the center */
+}
+
+.hover-logo:nth-child(4) { /* Bottom Right */
+    top: calc(50% + 80px); /* Increased distance from the center */
+    left: calc(50% + 80px); /* Increased distance from the center */
+}
+
+/* Show hover logos when hovering over the central logo or any of the hover logos */
+.central-logo:hover + .hover-logos,
+.hover-logos:hover {
+    opacity: 1;
+}
+
+.hover-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover-logo:hover ~ .popup {
+    visibility: visible;
+    opacity: 1;
+}
