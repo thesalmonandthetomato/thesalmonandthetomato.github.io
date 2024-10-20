@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Logo Webpage</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Dynamic Logo Page</title>
 </head>
 <body>
     <div class="container">
+        <!-- Central Logo -->
         <div class="central-logo">
-            <img src="img/central-logo.png" alt="Central Logo" />
+            <img src="img/central-logo.png" alt="Central Logo">
         </div>
+
+        <!-- Hover Logos and Text Boxes -->
         <div class="hover-logos">
-            <div class="hover-logo" data-summary="Summary for Logo 1" data-link="page1.html">
-                <img src="img/logo1.png" alt="Logo 1" />
+            <!-- Top Left -->
+            <div class="hover-logo" id="logo1">
+                <a href="" target="_blank"><img src="img/logo1.png" alt="Logo 1"></a>
+                <div class="logo-text">Read the summary photo essay in <a href="" target="_blank">Ecohustler</a></div>
             </div>
-            <div class="hover-logo" data-summary="Summary for Logo 2" data-link="page2.html">
-                <img src="img/logo2.png" alt="Logo 2" />
+            <!-- Top Right -->
+            <div class="hover-logo" id="logo2">
+                <img src="img/logo2.png" alt="Logo 2">
+                <div class="logo-text">Text for Logo 2</div>
             </div>
-            <div class="hover-logo" data-summary="Summary for Logo 3" data-link="page3.html">
-                <img src="img/logo3.png" alt="Logo 3" />
+            <!-- Bottom Left -->
+            <div class="hover-logo" id="logo3">
+                <img src="img/logo3.png" alt="Logo 3">
+                <div class="logo-text">Text for Logo 3</div>
             </div>
-            <div class="hover-logo" data-summary="Summary for Logo 4" data-link="page4.html">
-                <img src="img/logo4.png" alt="Logo 4" />
+            <!-- Bottom Right -->
+            <div class="hover-logo" id="logo4">
+                <img src="img/logo4.png" alt="Logo 4">
+                <div class="logo-text">Text for Logo 4</div>
             </div>
         </div>
     </div>
-    <div class="popup" id="popup"></div>
-
-    <script src="script.js"></script>
 </body>
 </html>
