@@ -35,7 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ff9d78;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #577c84;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -43,7 +43,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 255, 157, 120;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 87, 124, 132;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -11084,20 +11084,22 @@ header .overlay {
   font-style: italic;
 }
 
-body, html {
-  height: 100%;
+/* Base highlight wrapper applied by JS */
+.text-highlight {
+  position: relative;
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 235, 59, 0.3),
+    rgba(255, 235, 59, 0.3)
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 0.6em;
+  background-position: 0 50%;
+  transition: background-size 0.6s ease-out;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url('assets/img/orthophoto.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Activated when element enters viewport */
+.text-highlight.is-visible {
+  background-size: 100% 0.6em;
 }
