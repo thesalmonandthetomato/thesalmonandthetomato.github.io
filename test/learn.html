@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Learn</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon-default.png">
+		<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet">
+		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+		<link href="css/styles.min.css" rel="stylesheet" />
+		<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<!-- Page custom CSS -->
+		<style>
+.image-container {
+  position: relative; /* establishes positioning context */
+  width: 100%;
+  height: 100%;      /* adjust as needed */
+  overflow: hidden;   /* optional: prevents content from spilling */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* makes image cover container */
+}
+
+.text-overlay {
+  position: absolute; /* allows it to float on top */
+  top: 50%;           /* vertical center */
+  left: 50%;          /* horizontal center */
+  z-index: 10;        /* higher than image */
+  color: white;
+  text-align: center;
+}
+
+p a { 
+  display: inline; 
+}
+
+img {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.caption {
+  padding-bottom: 2rem;
+}
+
+.subheading {
+  padding-bottom: 1rem;
+}
+
+.iframerow {
+  display: flex;
+  justify-content: center; /* horizontal centring */
+  width: 100%; /* ensure it can use full column width */
+}
+
+.iframerow iframe {
+  max-width: 100%;
+}
+
+
+		</style>
+		<!-- Open graph settings (social networks sharing settings) -->
+		<meta name='twitter:card' content='summary_large_image'>
+		<!-- Open graph settings end -->
+	</head> 
+	<body>
+
+<!-- Navigation 2 -->
+	<nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+		<div class="d-block d-lg-none">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-3" data-aos="fade-down" data-aos-delay="0">
+						<a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-8x70cy62"><svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1"><path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z"></path></svg></a>
+					</div>
+					<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+						<a href="#"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-3" data-aos="fade-down" data-aos-delay="500">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-8x70cy62" aria-hidden="true">
+			<div class="offcanvas-header">
+				<a href="#"><img src="i/logo-dark.png" srcset="i/logo-dark@2x.png 2x" alt="" class="img-fluid"></a>
+				<a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas"><svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2"><path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"></path></svg></a>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">Home</a>
+				</div>
+				<div>
+					<a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">Features</a>
+				</div>
+				<div>
+					<a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">Blog</a>
+				</div>
+				<div>
+					<a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">Prices</a>
+				</div>
+			</div>
+		</div>
+		<div class="d-none d-lg-block">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-2">
+						<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-8 d-flex justify-content-end">
+						<a href="#" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="150" draggable="true">Learn</a>
+						<a href="see.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="150">See</a>
+						<a href="read.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Read</a>
+						<a href="listen.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">Listen</a>
+						<a href="experience.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">Experience</a>
+						<a href="join.html" class="fw-bold text-dark-1 ms-4" data-aos="fade-down" data-aos-delay="500">Join</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Header 2 -->
+		<header class="bg-bg-3 text-center">
+			<div class="container">
+				<h2 class="display-3" data-aos="fade-down" data-aos-delay="0">The Salmon and the Tomato</h2>
+			</div>
+		</header>
+		<!-- Blog 16 -->
+			<section class="bg-bg-3 text-center pb-4 pb-sm-4 pb-md-4 pb-lg-4 pb-xl-4 pb-xxl-4">
+				<div class="container">
+					<img src="i/2b5a7783-copy-2-1766678700.jpeg" srcset="i/2b5a7783-copy-2-1766678700.jpeg 2x" alt="" class="img-fluid rounded-circle mb-2" data-aos="fade-down" data-aos-delay="0">
+					<h5 class="mb-1" data-aos="fade-down" data-aos-delay="250">Neal Haddaway</h5>
+					<p class="mb-0" data-aos="fade-down" data-aos-delay="500">Words, photographs and data analysis</p>
+				</div>
+			</section>
+			<!-- Header 2 -->
+				<header class="bg-bg-3 text-center py-4 py-sm-4 py-md-4 py-lg-4 py-xl-4 py-xxl-4">
+					<div class="container">
+						<p class="mb-6 mb-md-8 remove-br fs-4" data-aos="fade-down" data-aos-delay="250"><i>Long read: 25-30 minutes</i></p>
+					</div>
+					<img src="i/nrh9455.jpg" srcset="i/nrh9455.jpg 2x" alt="" class="img-fluid w-100 pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-0 pt-0 px-xxl-0 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-0">
+					<p><i>An intensive greenhouse in Almería's "Sea of Plastic" in Spain</i></p>
+					<div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<p class="fs-4 pt-xxl-12 pt-12 pt-sm-12 pt-md-12 pt-lg-12 pt-xl-12"><i>Our food systems in Western Europe are driven by an extreme form of capitalism that relies on colonial exploitation of resources belonging to poorer nations, mostly in the Global South - this is called <b>Food Imperialism</b>. Almost half of the food we eat in the UK is directly imported, increasing to an estimated <a href="https://www.businessinsider.com/no-deal-brexit-percentage-british-food-imported-shortages-2019-1" target="_blank">80% when imported ingredients are included</a>. The public knows staggeringly little about the conditions in which this food is produced,nor about the social and environmental impacts these production systems have. By focusing in on two food items, salmon and tomatoes, we can clearly see the deeply entrenched problems that each produces, and the surprising catastrophic link between them that is driving migration and environmental destruction.</i></p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">A Globalised World</h2>
+							<p class="fs-4">The world is more connected today than ever before. More than <a href="https://resourcetrade.earth/?year=2022&amp;units=weight&amp;autozoom=1">12 billion tonnes of produce</a> are moved across the planet in global trade every year - representing <a href="https://resourcetrade.earth/?year=2022&amp;units=weight&amp;autozoom=1">almost 9 trillion USD</a>. International trade is now a huge component of the economies of all countries - <a href="https://ourworldindata.org/trade-and-globalization">around 25% of GDP</a> (gross domestic product).</p>
+							<img src="i/vesselfinder.png" srcset="i/vesselfinder.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Global cargo vessels (71,469) tracked in thepreceding 24 hours at 13:15 15/07/24, showing high-volume vessel regions as hot spots for all vessel types. Data source: <a href="https://www.vesselfinder.com/">https://www.vesselfinder.com/</a></i></p>
+							<p class="fs-4">Agricultural products correspond to around <a href="https://resourcetrade.earth/?year=2022&amp;category=1&amp;units=weight&amp;autozoom=1">12% of all traded commodities by weight</a>, and 18% by value. This is a vast share of all food consumed - taking Britain as an example, although the UK Food Security Index claims that <a href="https://www.gov.uk/government/publications/uk-food-security-index-2024/uk-food-security-index-2024#:~:text=Production%20was%20at%2060%25%20for,mitigates%20national%20risks%20to%20supply">40% of British food is imported</a> (45% of vegetables, 83% of fruit), this figure ignores food produced using imported ingredients. <a href="https://www.businessinsider.com/no-deal-brexit-percentage-british-food-imported-shortages-2019-1">Oneanalyst from HSBC</a> has stated that 80% of British food is at least partially reliant on imported products.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">Food Imperialism: the empire strikes back</h2>
+							<p class="fs-4">This dependence allows us to eat fruit and vegetables all year round, irrespective of what is in season. But it also makes us dependent onother economies and legal frameworks on food quality, as well as socialand environmental sustainability and responsibility. With less control over what is in our food and how it is produced, the precise nature of our food systems are opaque.</p>
+							<p class="fs-4">Unscrupulous companies profiteer from this lack of transparency and weaker social and environmental controls, facilitating what some people refer to as ‘<a href="https://feedbackeurope.org/blue-food-imperialism-how-farming-fish-in-europe-undermines-food-security-and-livelihoods-in-west-africa/">foodimperialism</a>’ - continued colonial control by the richer Global Northover developing states. This can take the form of outright <a href="https://adf-magazine.com/2024/04/chinese-trawlers-decimate-west-african-fish-stocks-as-oceans-heat-up/">industrial extraction of sovereign states’ resources</a>, but can also involve organisations (like the EU) <a href="https://grain.org/en/article/5777-colonialism-s-new-clothes-the-eu-s-economic-partnership-agreements-with-africa">using their power to establish trade agreements that greatly favour European Union financial interests</a> over those of local people.</p>
+							<p class="fs-4">In a globalised society where profits are placed above people and environment, this profiteering is ubiquitous. Organisations, like <a href="https://trase.earth/">Trase.earth</a>, have been established by researchers to help shine a light in parts of this dark web of trade. Trase uses <a href="https://www.investopedia.com/terms/b/billoflading.asp#:~:text=A%20bill%20of%20lading%20is%20a%20document%20of%20title%2C%20a,carrier%2C%20shipper%2C%20and%20receiver">bills of lading</a> (a receipt provided by a carrier to a shipper to document the transport of goods from one place to another) along with geographical forest cover data to explicitly link trade carriers that ship so-called ‘forest commodities’ (goods like soy and coffee that areproduced in areas at risk of deforestation) to the loss of vital forestsin South America and Asia. But this work is incredibly expensive and burdensome, and most of our supply chains remain shrouded in mystery.</p>
+							<p class="fs-4">Two particularly damaging food systems have become vital in turning once luxury items into supermarket staples, and ensuring year-round availability at low cost: salmon and out-of-season fruit and vegetables. These food systems are not unusual - they are merely examples of the kinds of damaging, profit-making food chains that damage social and environmental systems locally and internationally. Their lack of transparency fuels continued unsustainability and threatens thelivelihoods of hundreds of thousands of vulnerable people. Understanding this perverse food imperialism will help us design sustainable systems that put people and the planet above profits.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading pb-xxl-0 pb-sm-0 pb-md-0 pb-lg-0 pb-xl-0">Part 1: The Salmon Rush</h2>
+							<img src="i/dji202504260905150925d.jpg" srcset="i/dji202504260905150925d.jpg 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>A salmon farm in Scotland with feed being restocked</i></p>
+							<p class="fs-4">Aquaculture is a major food commodity globally, with <a href="https://resourcetrade.earth/?year=2022&amp;category=9&amp;units=value&amp;autozoom=1">30 million tonnes (148 billion USD) of fish and aquatic resources</a> traded in 2022. The industry has grown 50% since the year 2000, and over 44% of all fish produced are farmed (<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/raq.12337#raq12337-bib-0072">FAO2018</a>). Salmon farming is one of the largest individual industries within this burgeoning aquaculture sector. The biggest exporter, Norway, produced <a href="https://en.seafood.no/news-and-media/news-archive/record-exports-of-norwegian-seafood-in-2023-due-to-price-growth-and-weak-krone/">1.2 million tonnes of Atlantic salmon in 2023</a> - more than doubling from levels in 2005. <a href="https://scotland.shinyapps.io/sg-aquaculture-production-surveys/">Scotland produces a modest 200,000 tonnes of salmon</a> by comparison, having grown rapidly in the late 1990s.</p>
+							<img src="i/scottishindustry.png" srcset="i/scottishindustry.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Salmon production in Scotland (blue) relative to an increasingly monopolised industry (red). Data source: <a href="https://www.gov.scot/publications/scottish-fish-farm-production-survey-2023/">Scottish Government, Scottish Fish Farm Production Surveys 1980-2023</a></i></p>
+							<p class="fs-4">One of the industry’s trade organisation, Salmon Scotland, claims salmon farming will <a href="https://www.shetlandtimes.co.uk/2023/07/22/aquaculture-leader-welcomes-new-scottish-government-vision#:~:text=He%20said%3A%20%E2%80%9CThe%20blue%20economy,shared%20environment%20for%20future%20generations.%E2%80%9D">"increase  food security at home and feed the growing global population</a>”, but fails to acknowledge the continued use of edible fish in its fish feed supply chain. <a href="https://feedbackglobal.org/farmed-salmon-a-lesson-in-extractivism/">Accordingto the environmental campaign charity ‘Feedback’</a>, “the chief business of salmon farming is to take edible food from food insecure places and convert it into a higher value, lower nutrition food in therich world. It is the business of extraction”. It is also incredibly inefficient - <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aaa273">researchers estimate</a> that salmon farming leads to a 90% net loss incalories.</p>
+							<p class="fs-4">But who is buying all of this salmon? In 2022, <a href="https://rawgit.com/thesalmonandthetomato/tradeanalysis/master/Major%20salmon%20importers%20by%20year.html">France, Poland and Sweden were the biggest importers of salmon</a>, each taking between 237,000 and 249,000 tonnes annually. Sweden’s imports have almost quadrupled in the last 20 years, as it positions itself as a processor of (mostly Norwegian) salmon.</p>
+							<div>
+								<div class="row iframerow">
+									<div class="zi-0 w-75">
+										<div id="datawrapper-vis-7ghV2" style="all: initial;" class="datawrapper-script-embed vis-height-fixed vis-d3-maps-choropleth">
+											<script type="text/javascript" defer="" src="https://datawrapper.dwcdn.net/7ghV2/embed.js" charset="utf-8" data-target="#datawrapper-vis-7ghV2">
+											</script>
+											<noscript>
+												<img src="https://datawrapper.dwcdn.net/7ghV2/full.png" alt="Choropleth map" />
+											</noscript>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+											<datawrapper-visualization>
+											</datawrapper-visualization>
+										</div>
+									</div>
+									<p class="caption fs-5"><i>Top importers of salmon (in tonnes) in 2022. Data source: <a href="https://resourcetrade.earth/?year=2022&amp;category=309&amp;units=weight&amp;autozoom=1">ResourceTrade.earth</a></i></p>
+									<img src="i/major-salmon-importers-by-year.png" srcset="i/major-salmon-importers-by-year.png 2x" alt="" class="img-fluid w-75">
+									<p class="caption fs-5"><i>Top 18 salmon importers in 2022 and their historical imports. Data source: <a href="https://cran.r-project.org/web/packages/comtradr/index.html">United Nations Comtrade API, comtradr package</a></i></p>
+								</div>
+							</div>
+							<p class="fs-4">Despite - or rather because of - this financial success, salmon farming is plagued by controversy, from local <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/raq.12337">environmental damage</a> and <a href="https://animalequality.org/news/2024/11/13/investigations-expose-abuse-on-salmon-farms/">animal welfare concerns</a>, to broad <a href="https://changingmarkets.org/press-releases/hidden-cost-of-salmon-farming-almost-us50-billion-since-2013/">social impacts</a> of its <a href="https://foodrise.eu/research/blue-empire-how-the-norwegian-salmon-industry-extracts-nutrition-and-undermines-livelihoods-in-west-africa/">overseas feed supply chains</a>. In prioritising profits over social and environmental responsibility, the salmon farming industry is the cause of considerable, wide-reaching harms.</p>
+							<p class="fs-4">In salmon farming, fish are raised in hatcheries before being released into open pens that float close to shore in often protected sea bays, lochs and inlets. Typically, feed barges supply the pens with pelleted feed automatically, with human intervention only necessary for veterinary interventions and harvest. In practice, <a href="https://doi.org/10.1038/s41598-021-93874-6">excessive mortality rates caused by lice infestations and disease</a> mean that veterinary interventions (such as delicing) and administering antibiotics are common. With a <a href="https://www.salmonscotland.co.uk/facts/fish-welfare/mortality-rates-in-scottish-salmon-farming">mean mortality rate of around 14.5% per year</a>, salmon farming in Scotland also involves considerable time removing dead, dying and rotting fish corpses from these farms.</p>
+							<img src="i/escapesreturns.png" srcset="i/escapesreturns.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Vast numbers of escaped salmon compete andbreed with wild salmon, adding pressures to dwindling populations. Data source: <a href="https://data.marine.gov.scot/dataset/status-salmon-scotland/resource/b7b88d18-649a-490d-bdd1-0167933f0830">Marine Directorate, Scottish Government</a></i></p>
+							<p class="fs-4">An expanding body of research shows that the local impacts caused by salmon farming include: habitat loss (<a href="https://onlinelibrary.wiley.com/action/getFTRLinkout?url=http%3A%2F%2Fscholar.google.com%2Fscholar_lookup%3Fhl%3Den%26publication_year%3D2002%26author%3DRR%2BStickney%26author%3DJP%2BMcVey%26title%3DResponsible%2BMarine%2BAquaculture%2BWorld.%2BAquaculture%2BSociety&amp;doi=10.1111%2Fraq.12337&amp;doiOfLink=10.1079%2F9780851996042.0000&amp;linkType=gs&amp;linkLocation=Reference&amp;linkSource=FULL_TEXT">Stickney &amp; McVey 2002</a>); damage to benthic (sea bed) ecosystems (e.g.&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S0044848618326668?casa_token=jXoxj8MP4IMAAAAA:g0MMH-WDRzi62WYBzKPhOAnnMHjY7GtGG8DqL1XjKLTkddZYthoxH9VR8Ov1DQd93WjMf4YzA4I">Dauvinet al.&nbsp;2020</a>, <a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.841806/full">Larocheet al.&nbsp;2022</a>); pollution from salmon defecation, excess feed, and chemical use (e.g.&nbsp;<a href="https://onlinelibrary.wiley.com/action/getFTRLinkout?url=https%3A%2F%2Fdoi.org%2F10.1007%2F978-1-4020-6810-2_1&amp;doi=10.1111%2Fraq.12337&amp;doiOfLink=10.1007%2F978-1-4020-6810-2_1&amp;linkType=VIEW_NO_ACCESS&amp;linkLocation=Reference&amp;linkSource=FULL_TEXT">Tett 2008</a>); overuse of antibiotics and antibiotic resistance (<a href="https://www.scielo.br/j/aib/a/yDRmj8dDGSg4VNc7xRgx8Xy/">Gazal et al.&nbsp;2020</a>); escapes and genetic interaction of non-native species with wild fish populations (<a href="https://www.researchgate.net/profile/Thorleifur-Agustsson/publication/237791969_Evaluation_of_genetic_impact_of_aquaculture_activities_on_native_populations_A_European_network/links/5a5ef98d458515c03ee137de/Evaluation-of-genetic-impact-of-aquaculture-activities-on-native-populations-A-European-network.pdf">Svasandet al.&nbsp;2007</a>; <a href="https://onlinelibrary.wiley.com/action/getFTRLinkout?url=http%3A%2F%2Fscholar.google.com%2Fscholar_lookup%3Fhl%3Den%26volume%3D18%26publication_year%3D2009%26pages%3D91-96%26journal%3DCahiers%2BAgricultures%26author%3DB%2BChevassus%25E2%2580%2590au%25E2%2580%2590Louis%26author%3DJ%2BLazard%26title%3DPerspectives%2Bpour%2Bla%2Brecherche%2Bbiotechnique%2Ben%2Bpisciculture&amp;doi=10.1111%2Fraq.12337&amp;linkType=gs&amp;linkLocation=Reference&amp;linkSource=FULL_TEXT">Chevassus-au-Louis &amp; Lazard 2009</a>; <a href="https://onlinelibrary.wiley.com/action/getFTRLinkout?url=http%3A%2F%2Fscholar.google.com%2Fscholar_lookup%3Fhl%3Den%26volume%3D18%26publication_year%3D2009%26pages%3D57-163%26journal%3DCahiers%2BAgricultures%26author%3DJ%2BLazard%26author%3DC%2BL%25C3%25A9v%25C3%25AAque%26title%3DIntroductions%2Bet%2Btransferts%2Bd%2527esp%25C3%25A8ces%2Bde%2Bpoissons%2Bd%2527eau%2Bdouce&amp;doi=10.1111%2Fraq.12337&amp;linkType=gs&amp;linkLocation=Reference&amp;linkSource=FULL_TEXT">Lazard &amp; Lévêque 2009</a>); disease transmission to wild fish species (<a href="https://www.int-res.com/abstracts/aei/v4/n2/p91-115/">Salama and Rabe 2013</a>); and mass mortalities and substandard animal welfare (<a href="https://www.sciencedirect.com/science/article/pii/S0308597X2100141X">Størkersenet al.&nbsp;2021</a>).</p>
+							<p class="fs-4">But the negative impacts of salmon farming do not stop there. The production of salmon requires large amounts of feed - one estimate in the peer-reviewed scientific literature states that 2.8kg of feed is needed for each 1 kg of salmon (<a href="https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1065/lca2006.01.236&amp;casa_token=_b44ghu-pqcAAAAA:IZSx8p8R3ZoFFEfoXipz7G5dRidZx530Cdv0Unt3v1SupZaLNuaufvCPkCC0PNAYSUB0jlR5prAh2yc">Ellingsenand Aanondsen 2006</a>), although this ratio (fish in: fish out) is hotly debated (<a href="https://www.sciencedirect.com/science/article/pii/S0044848620309741">Koket al.&nbsp;2020</a>), and strongly refuted by the industry (<a href="https://asc-aqua.org/blog/have-you-heard-these-five-myths-about-salmon-farming-heres-the-truth-behind-them/">Aquaculture Stewardship Council 2021</a>). Irrespective of the precise values of the volume needed, the industry continues to require wild fish as a core component of salmon feed. A report by the campaign organisation Feedback (<a href="https://feedbackglobal.org/blue-empire-how-your-supermarket-salmon-is-impacting-communities-in-west-africa/">2024</a>) states that 2.5% of all global marine fish caught are used to feed the Norwegian salmon farming industry. At the time of pubilcation of this report, it appears that <a href="https://feedbackglobal.org/blue-empire-how-your-supermarket-salmon-is-impacting-communities-in-west-africa/">most of this demand for wild fish is met by stocks in West Africa</a>.</p>
+							<p class="fs-4">When international trade regulations are enforced they are applied selectively. Warnings are given to countries with which the EU has significant trade agreements, with outright fishing bans only levied towards lesser tradepartners. <a href="https://www.sciencedirect.com/science/article/pii/S0964569119301620">A study from 2020</a> showed that over five years, EU trade with “red-carded” countries came to 491 million USD, whilst it was 79.8 billion USD for yellow-carded countries. Continued trade in fish is not the only benefit the EU seeks.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">Part 2: Outsourced Impacts</h2>
+							<p class="fs-4">All along the coast of Mauritania, Senegal, and The Gambia,foreign-owned factories are appearing that are turning small pelagic fish into fish meal and fish oil. <a href="https://feedbackglobal.org/farmed-salmon-a-lesson-in-extractivism/">According to some</a>, 90% of these fish are edible - and in The Gambia, <a href="https://capacity4dev.europa.eu/library/vca4d-gambia-fishery-june-2020-full-report">over 80% of people rely on such fish</a> for vital protein. As foreign states increasingly over-extract fish from the waters along Africa’s west coast, fishery stocks are declining, and prices have been driven up. As a result, <a href="https://www.desmog.com/2023/06/08/how-fishmeal-factories-put-food-out-of-reach-for-communities-in-the-gambia/">artisanal fishers desperate for money are forced to sell their catches to these factories</a>, instead of local markets for human consumption. Since fishing is a predominantly male activity here and <a href="https://www.bbc.com/mediacentre/proginfo/2022/03/the-tue-documentary">women typically run local fish processing (including salting the fish) and markets</a>, the shift in sales towards the fishmeal industry has disproportionately affected women. <a href="https://www.fao.org/3/cb7990en/cb7990en.pdf">An FAO report</a> found that one species (the <em>bonga</em>) increased in price four-fold as a result of competition with fishmeal factories in The Gambia, <a href="https://www.amnesty.org/en/documents/afr27/6644/2023/en/">resulting in fish processors losing their jobs and income</a>. In The Gambia alone, fishmeal production <a href="https://resourcetrade.earth/?year=2020&amp;exporter=270&amp;category=715&amp;units=weight&amp;autozoom=1">jumped from 67 tonnes in 2015 to 3,200 tonnes by 2020</a>, although this is likely a substantial underestimate due to underreporting. <a href="https://www.desmog.com/2023/06/08/how-fishmeal-factories-put-food-out-of-reach-for-communities-in-the-gambia/">An investigation by DeSmog</a> found that this required processing of around 16,600 tonnes of fresh fish in 2018 - a third of The Gambia’s annual catch. By 2020, Norway was importing over 23,000 tonnes of fish from Mauritania, but trade data are difficult to interpret because fish are often not landed in Africa, with <a href="https://tg-machines.com/compact-fish-meal-plant-for-onboard-fishing-vessels">vessels now capable of processing fish into fishmeal at sea</a>.</p>
+							<img src="i/mauritaniafishoil.png" srcset="i/mauritaniafishoil.png 2x" alt="" class="img-fluid">
+							<p class="caption fs-5"><i>Mauritanian fish oil exports in 2022. Data source: <a href="https://resourcetrade.earth/?year=2022">ResourceTrade.earth</a></i></p>
+							<p class="fs-4">However, these changes have caused a substantial backlash in WestAfrican fishing communities. In the Senegalese fishing town of Cayar, <a href="https://www.voanews.com/a/landmark-lawsuit-filed-against-senegal-fish-meal-factory-/6759390.html">local fishermen are suing one of the new fishmeal factories</a> because of the scale of environmental damage caused by fish processing. In 2017, <a href="https://www.bbc.com/news/world-africa-65204179">a Gambian fishfactory in the village of Gonjur released phosphorus into a lagoon</a>, killing vast quantities of fish within the wildlife reserve. Local people have also <a href="https://www.desmog.com/2023/06/08/how-fishmeal-factories-put-food-out-of-reach-for-communities-in-the-gambia/">complained about the smell and its effects on quality of life and tourism</a>. Campaigns in Senegal have secured a commitment from the government to stop granting new fishing licences, with <a href="https://www.greenpeace.org/africa/en/press/11356/a-chance-for-the-ocean-to-recover-on-world-oceans-day-senegal-takes-critical-decisions/?utm_campaign=oceans&amp;utm_source=t.co&amp;utm_medium=post&amp;utm_content=single-image&amp;utm_term=pr-licence-victory-senegal-eng">52 new foreign fishing licences</a> rejected in 2020, <a href="https://newint.org/immersive/2021/09/20/disappearing-senegalese-sardines-fjf">but non-transparent licensing processes mean</a> illegal fishing continues.</p>
+							<p class="fs-4">Both non-governmental and intergovernmental organisations agree -fishing industries within Western food and feed supply chains should be regulated to ensure sustainability. The NGO Amnesty stated there is aneed to “<a href="https://www.amnesty.org/en/documents/afr27/6644/2023/en/">regulate the fish-based feed industry to limit the use of fishmeal and fish oil (FMFO) made from fish that are already overexploited and increase transparency</a>”. Meanwhile, the EU’s Common Fisheries Policy, which was introduced in 1983, aimed at protecting wild fish stocks, with <a href="https://www.seafoodsource.com/news/environment-sustainability/eu-fishing-agreements-accused-of-contributing-to-overfishing-in-west-africa">2013 updates to the policy including third countries’ sustainability where EU fleets operate</a>. According to the Coalition for Fair Fisheries Arrangements, the EU fleets are working around restrictions and targeting depleted fisheries in West Africa “<a href="https://www.seafoodsource.com/news/environment-sustainability/eu-fishing-agreements-accused-of-contributing-to-overfishing-in-west-africa">through private licensing, chartering, joint venture agreements and high seas fishing</a>”, including reflagging vessels.</p>
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">Part 3: Moving People</h2>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<p class="fs-4">In 2022, <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Migration_and_migrant_population_statistics">5.1 million people from outside of the EU migrated to an EU member state tolive</a>, with <a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/promoting-our-european-way-life/statistics-migration-europe_en">9.93 million non-EU citizens working in the EU labour force</a> (some 5.1% of the total labour market). Immigration is vital for the EU economy, since the population would <a href="https://unric.org/en/migration-to-the-eu-facts-not-perceptions/">otherwise fall by c.&nbsp;500,000 per year</a>. The unregulated employment of undocumented migrants through a ‘<a href="https://unric.org/en/migration-to-the-eu-facts-not-perceptions/">blackmarket</a>’ therefore represents an important means of sustenance for many people arriving in Europe, and is seen as a vital source of hope for many people in West Africa affected by the loss of artisanal fisheries.</p>
+							<p class="fs-4">However, along with legal (or ‘regular’) routes of entering the EU, large numbers of people arrive here through irregular (referred to as ‘illegal’) routes. In the first 11 months of 2023, <a href="https://unric.org/en/migration-to-the-eu-facts-not-perceptions/">the Institute of Migration recorded over 260,000 undocumented migrants entering Europe</a> by land and sea routes, up significantly from 190,000 in 2022 and 150,000 in 2021.</p>
+							<img src="i/warmigration.png" srcset="i/warmigration.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>People migrating to Europe from West Africa via The Canary Islands in small boats, including totals missing and dead along the route. Data sources: <a href="https://data.unhcr.org/en/situations/europe-sea-arrivals/location/24567">UNHCR</a> and <a href="https://missingmigrants.iom.int/data">Missing Migrants Project</a></i></p>
+							<p class="fs-4">According to Spanish Ministry of the Interior data, across all of its borders, Spain received <a href="https://www.interior.gob.es/opencms/export/sites/default/.galleries/galeria-de-prensa/documentos-y-multimedia/balances-e-informes/2023/24_informe_quincenal_acumulado_01-01_al_31-12-2023.pdf">56,852 irregular migrants by land and sea in 2023, with 39,910</a> of these arriving in the Canary Islands. These islands sit just over 100 km from the African coast - tantalisingly close, but a potentially fatal crossing. <a href="https://reliefweb.int/report/canary-islands-spain/west-and-central-africa-irregular-migration-routes-europe-western-african-atlantic-route-january-march-2024">In the first 3 months of 2024, 13,115 people arrived via this route</a>, and at the same time, <a href="https://reliefweb.int/report/canary-islands-spain/west-and-central-africa-irregular-migration-routes-europe-western-african-atlantic-route-january-march-2024">119 people died or went missing</a> in 12 known shipwrecks along the African coast - a recent report suggests <a href="https://caminandofronteras.org/monitoreo/monitoreo-del-derecho-a-la-vida-ano-2024/">the number of people who have died on this route could be close to 10,000</a>.</p>
+							<p class="fs-4">It is unclear where in the EU people who arrive in Spain through irregular migration finally end up. Because of their undocumented status, however, they are highly likely to seek out places with a lower chance of arrest and deportation, <a href="https://www.reuters.com/world/europe/eu-sees-rise-deportation-rates-non-eu-migrants-2024-06-28">particularly as deportation rates increase</a>, and where informal employment is feasible. Spain is not only the first country of arrival for migrants via the West African Atlantic Route and Western Mediterranean Routes, it is favourable in terms of safe employment and settlement opportunities. Spain previously provided an <a href="https://www.reuters.com/world/europe/spains-parliament-draft-amnesty-bill-undocumented-migrants-2024-04-09/">amnesty for undocumented migrants to obtain residency in 2005, and looks set to repeat the measures</a>.</p>
+							<p class="fs-4">As a result of illegality and uncertainty, <a href="https://www.tandfonline.com/doi/abs/10.1080/03056244.2022.2186599">undocumented migrants are still currently forced into precarious and often dangerous jobs</a>, paid poorly with no guarantee of work, and live in unsanitary and unsafe informal settlements. These people typically end up working in highly exploitative sectors, including tourism and agriculture, inorder to send money home to support their families they left behind.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading pb-0 pb-sm-0 pb-md-0 pb-lg-0 pb-xl-0 pb-xxl-0">Part 4: Agricultural Exploitation</h2>
+							<img src="i/dji202411171043180196d-small.jpeg" srcset="i/dji202411171043180196d-1766600312.jpg 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Over 32,000 hectares of plastic covered greenhouses make up Almería’s ‘Sea of Plastic’ in southern Spain</i></p>
+							<p class="fs-4">Spain produces a large proportion of the European demand for freshfruit and vegetables. In 2021, the Andalusian province of Almeríaproduced almost <a href="https://www.hortidaily.com/article/9485101/almeria-increased-its-32-827-hectares-of-greenhouses-to-almost-48-000-hectares-by-having-two-cultivation-cycles/">1million tonnes of cucumbers, more than 700,000 tonnes of tomatoes</a>,and a total of <a href="https://www.freshplaza.com/europe/article/9642343/notable-increase-in-production-and-acreage-but-great-concern-over-falling-prices/">3.8million tonnes of all fruit and vegetables</a>. Of this, some <a href="https://www.hortidaily.com/article/9485101/almeria-increased-its-32-827-hectares-of-greenhouses-to-almost-48-000-hectares-by-having-two-cultivation-cycles/">2.9million Euro was exported to other countries</a>. Around <a href="https://www.ethicalconsumer.org/ethicalcampaigns/agricultural-workers-rights-almeria">25%of the peppers imported into the UK are grown in Almería</a>, and <a href="https://www.gov.uk/government/statistics/latest-horticulture-statistics">Spainis the single largest source of all fresh fruit and vegetables broughtinto the UK</a>. These fruits and vegetables are grown in the largestconcentration of greenhouses on earth - more than 32,000 hectares.Almería alone is responsible for around 38% of the horticulturalproduction in Spain, with 80% of crops destined to be exported.</p>
+							<img src="i/spaintomatoes.png" srcset="i/spaintomatoes.png 2x" alt="" class="img-fluid">
+							<p class="caption fs-5"><i>Spanish tomato exports in 2022. Data source: <a href="https://resourcetrade.earth/?year=2022">ResourceTrade.earth</a></i></p>
+							<p class="fs-4">The area of greenhouses in Almería <a href="https://www.researchgate.net/publication/342644487_THE_MAIN_TRENDS_IN_THE_ACTIVITY_OF_AGRI-FOOD_COOPERATIVES_IN_ALMERIA_SPAIN">increasedby 20% between 2012 and 2019</a>. In 2023 and 2024, although greenhousesarea grew by only 0.6%, <a href="https://www.freshplaza.com/europe/article/9642343/notable-increase-in-production-and-acreage-but-great-concern-over-falling-prices/">productivityincreased substantially - up 22% to a total of 3.82 million tonnes</a>.But as export demand for off-season, low-cost fruit and vegetablesincreases, so do the impacts of these purchasing habits. The highproductivity of this artificial agricultural system is only possiblethrough the exploitation of environmental and social resources, and thenegative social-ecological impacts here have been <a href="https://www.theguardian.com/world/2005/sep/21/spain.gilestremlett">reportedfor decades</a>.</p>
+							<img src="i/almeriagreenhouses.png" srcset="i/almeriagreenhouses.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Greenhouse area and production in Almería. Data source: <a href="https://www.plataformatierra.es/mercados/informe-analisis-campana-hortofruticola-almeria-2024">Análisis de la campaña hortofrutícola de Almería. 2001-2024, Cajamar</a></i></p>
+							<p class="fs-4">The continued growth of greenhouses here <a href="https://doi.org/10.3390/ijerph16214097">encroaches on protectedareas</a> and native scrubland, <a href="https://www.mdpi.com/1660-4601/16/21/4097">threatening Almería’shigh biodiversity</a>. In El Ejido, the heartland of the greenhouseindustry, one of the most strictly protected wetlands lies only a fewpaces away from densely packed greenhouses. This intensive agriculturerequires enormous volumes of water for irrigation - <a href="https://www.foodunfolded.com/article/the-environmental-impacts-of-greenhouse-agriculture-in-almeria-spain#ref19">80%of the water needed for the greenhouses comes from deep underground</a>.Overexploitation of these aquifers along with the extensive use ofpesticides and fertilisers has resulted in intense pollution (<a href="https://www.mdpi.com/2071-1050/9/12/2271">between 20 and 50% ofthe fertiliser used here leaches down into the water table</a>). Theseaquifers once supplied the region’s drinking water, but decades ofpollution has meant that the water is now undrinkable.</p>
+							<p class="fs-4">The region is known colloquially as the ‘sea of plastic’ because ofthe massive amounts of plastic sheeting used to cover the greenhouses.Around <a href="https://elpais.com/america/sociedad/2020-11-06/los-plasticos-de-la-agricultura-inundan-almeria.html">34,000tonnes of plastic is thrown away every year</a> as it breaks down in theintense sunlight and gets damaged. <a href="https://www.foodunfolded.com/article/the-environmental-impacts-of-greenhouse-agriculture-in-almeria-spain#ref9">Muchof this is dumped illegally</a>, <a href="https://eia-international.org/wp-content/uploads/Fields-of-Plastics-FINAL.pdf">blockingrivers or eaten by wildlife</a>, including the famous case of a <a href="https://doi.org/10.1016/j.marpolbul.2013.01.033">sperm whale thatdied after ingesting 17 kg of plastic</a>, mostly from thegreenhouses.</p>
+							<p class="fs-4">But as well as exploiting the environment, this agricultural systemdepends upon exploiting a vulnerable labour force. An estimated <a href="https://web.archive.org/web/20161006041135/http://www.theecologist.org/News/news_analysis/2832894/salad_days_semislavery_on_the_sweating_fields_of_southern_spain.html">120,000people are employed in the greenhouses</a>, with <a href="https://web.archive.org/web/20161006041135/http://www.theecologist.org/News/news_analysis/2832894/salad_days_semislavery_on_the_sweating_fields_of_southern_spain.html">themajority employed illegally because of their undocumented status</a>.These jobs are unpredictable, dangerous, and offer very low wages withno contracts - <a href="https://www.dw.com/en/spains-sea-of-plastic-where-europe-gets-its-produce-migrants-get-exploited/a-47824476">migrantworkers are typically paid 50-70% of the national minimum wage</a>.</p>
+							<img src="i/greenhouseworkers.png" srcset="i/greenhouseworkers.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Greenhouse workers by immigration status. Data source: <a href="https://www.plataformatierra.es/mercados/informe-analisis-campana-hortofruticola-almeria-2024">Análisis de la campaña hortofrutícola de Almería. 2001-2024, Cajamar</a></i></p>
+							<p class="fs-4">Many farmers mark little profit, under continuous pressure toincrease the production of fresh fruit and vegetables in a highlycompetitive market with low wholesale prices - for example, <a href="https://www.dw.com/en/spains-sea-of-plastic-where-europe-gets-its-produce-migrants-get-exploited/a-47824476">theytypically receive only 12% of the final supermarket selling price forcucumbers</a>. As a result, <a href="https://www.dw.com/en/spains-sea-of-plastic-where-europe-gets-its-produce-migrants-get-exploited/a-47824476">manyfarmers are going out of business</a>. It is not hard to understand whythey often employ undocumented labourers willing to take low wages.</p>
+							<p class="fs-4">The migrants working in the greenhouses are often forced to live inunsanitary living conditions - slums known as ‘<a href="https://www.dw.com/en/spains-sea-of-plastic-where-europe-gets-its-produce-migrants-get-exploited/a-47824476">chabolas</a>’- without access to clean water and safe electricity, and often withpoorly stored cooking gas, <a href="https://www.ethicalconsumer.org/food-drink/500-agricultural-workers-left-homeless-after-fire-almeria-spain">commonlyresulting in fires</a>. Some of these settlements have been <a href="https://socsatalmeria.org/comunicado-informe-de-la-plataforma-derecho-a-techo-sobre-el-derribo-de-walili-el-30-01-2023/">bulldozedand destroyed by local authorities</a> in order to remove them frompublic view. The uncertainty and stress of these living conditions hasresulted in a number of social issues <a href="https://www.aljazeera.com/features/2019/10/16/consumers-are-not-aware-we-are-slaves-inside-the-greenhouses">likealcoholism</a> and depression. Some migrants are unable to work becauseof health issues. In one settlement near the town of Nijar, peopleunable to work often live together. They have little to do during theday other than wander the chabola streets whilst others work. Some ofthese migrants are now also trapped - their embassies refusing tosupport their repatriation or facilitate the paperwork they need toobtain legal residency.</p>
+							<img src="i/nrh5436.jpg" srcset="i/nrh5436.jpg 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Many migrant labourers are forced to live in informal settlements</i></p>
+							<p class="fs-4">The nature of the work within the greenhouses also comes withsignificant health risks. One <a href="https://journals.sagepub.com/doi/abs/10.1177/096032719601501203?journalCode=hetb">study</a>found that 37% of Almería greenhouse crop sprayers had elevated rates ofspontaneous abortion, mental health issues including depression, andneurologic disorders like headache, tremors and paraesthesia (skinburning or prickling). <a href="https://www.mdpi.com/2073-4395/12/3/619">It has been claimed thatgrowers are increasingly switching to organic farming and integratedpest management</a>, but it is not just agrichemical exposure that cancause harm - summer temperatures in the greenhouses can becomeunbearable, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003687010001286?via%3Dihub">technicallyclassed as “dangerous to human health”</a> in recent years.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">Part 5: Alternatives</h2>
+							<p class="fs-4">Whilst an increasing number of other countries are expandinggreenhouse production - Morocco <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652614010476">supplies68% of France’s tomatoes</a>, for example - they either experiencesimilar social impacts or, like the Netherlands, the <a href="https://www.cambridge.org/core/journals/global-sustainability/article/telecoupling-through-tomato-trade-what-consumers-do-not-know-about-the-tomato-on-their-plate/B0DEC7D9B692AE15BC151D58CE87C3C6">energyrequirement and carbon footprint are much higher, and costs per kilo arearound double</a> that of Spain. In all cases, it is the exploitationand constant drive for excessive profits that causes social-ecologicalharm.</p>
+							<p class="fs-4">Similarly, as the majority of salmon is exported to wealthy nationsand can be regarded largely as a luxury good, alternative food sourcescould be sourced that had lower social and ecological impacts. And yetthere is a lack of responsibility taken by importers for its food supplychains. <a href="https://www.mdpi.com/1660-4601/16/21/4097">Farming inAlmería accounts for 40% of its GDP</a>, with ownership relatively broadas <a href="https://www.mdpi.com/2071-1050/10/7/2198">95% of farms areowned by almost 15,000 families</a>. Importing countries have asignificant impact on the labour force of the region. For example, <a href="https://www.cambridge.org/core/journals/global-sustainability/article/telecoupling-through-tomato-trade-what-consumers-do-not-know-about-the-tomato-on-their-plate/B0DEC7D9B692AE15BC151D58CE87C3C6">Germany’stomato imports alone are responsible for 0.2% of total Spanish farmlabour</a>.</p>
+							<p class="fs-4">Although alternative feed sources for salmon have been reported, forexample insects that can be reared in closed, land-based systems.However, these have so far contributed insignificantly to the largequantities of feed needed across the industry - <a href="https://www.fishfarmingexpert.com/nofima-salmon-feed-trout-feed/alternative-ingredients-make-inroads-into-salmon-feed/1146793">just0.4% in Norway</a>. Perhaps this is in part due to regulatory resistanceand <a href="https://doi.org/10.1016/j.chemosphere.2009.12.021">fearsabout contamination</a>, <a href="https://thefishsite.com/articles/the-alternative-aquafeed-ingredients-impasse-fairr-initiative">prohibitivecosts, or perceived unsuitability</a>. Whatever the reason, sustainable,non-fish-based salmon feed is a long way off.</p>
+							<p class="fs-4">Climate change will increasingly make our world less stable,increasing risks to food production as a result of drought, flooding,frost, and novel pests and diseases. This will <a href="https://www.tandfonline.com/doi/full/10.1080/02508060.2018.1515569">affectimporting nations’ food resilience</a>. At the same time, there willcontinue to be <a href="https://www.tandfonline.com/doi/full/10.1080/02508060.2018.1515569">arise in the demand for fresh fruit and vegetables, more diverse diets,increasing luxury goods like salmon, and a greater volume of off-seasonproduce.</a></p>
+							<p class="fs-4">Climate change and increasing levels of mortality in salmonaquaculture may spell the end for financial viability of salmon farming.Alternatively, legislators may follow the example of <a href="https://www.theguardian.com/environment/article/2024/jun/20/canada-to-ban-open-net-pen-salmon-farming-in-british-columbia">BritishColumbia in banning salmon farming</a> as a result of its catastrophicenvironmental impacts. Simultaneously, countries are increasinglyseeking food security and control of their carbon emissions by investingin their own greenhouse agriculture, <a href="https://www.freshplaza.com/north-america/article/9659670/svegro-invests-in-more-swedish-grown-lettuce-through-a-new-automated-greenhouse/">forexample Sweden</a>.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-lg-12 pt-md-12 pt-sm-12 pt-12 subheading">Part 6: Viable Solutions</h2>
+							<p class="fs-4">One of <a href="https://www.penguin.co.uk/books/455534/the-invisible-doctrine-by-hutchison-george-monbiot-and-peter/9781802062694">neoliberalism’s</a>enduring myths is that consumer choice functions as a form of democraticpower - that by selecting ethically branded or ‘sustainable’ products,individuals can drive meaningful system change. But <a href="http://plataforma.responsable.net/sites/default/files/myth_ethical_consumer.pdf">thislogic has been widely discredited</a>. While coordinated consumer actioncan exert some pressure, <a href="https://www.routledge.com/Prosperity-without-Growth-Foundations-for-the-Economy-of-Tomorrow/Jackson/p/book/9781138935419">shiftingindividual purchasing habits alone is a weak lever for transformingentrenched economic and political systems</a>. In a marketplacesaturated with competing calls on our conscience - from carbonfootprints to plastic packaging, organic certification to Fairtradelabels - the impact of ethical consumption is diffuse, fragmented, and<a href="https://www.tandfonline.com/doi/abs/10.1080/00220380412331321961">oftenco-opted by the very systems it seeks to reform</a>. There is also astrong ‘attitude-behaviour gap’, sometimes referred to as cognitivedissonance, whereby what we know and how we behave are misaligned -despite knowing about a problem, <a href="https://link.springer.com/content/pdf/10.1007/s10551-006-9222-2.pdf">wemay still be constrained in our consumption habits by things like cost,availability, and convenience</a>.</p>
+							<p class="fs-4">Supermarkets often claim that consumers ‘demand’ winter fruitand vegetables, low-cost options, and stable prices, but is this true? Untilthe mid-1980s, British consumers consistently paid 2-3 times the autumnprice for tomatoes during the early spring - since 2010, prices barelyfluctuate across the year. Luxuries have become staples.</p>
+							<img src="i/tomatoprices.png" srcset="i/tomatoprices.png 2x" alt="" class="img-fluid w-75">
+							<p class="caption fs-5"><i>Average tomato prices (GBP per kilo). Data source: <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/cznj/mm23">UK Office for National Statistics; Consumer price inflation time series (MM23)</a></i></p>
+							<p class="fs-4">This is what happens when food is sold as a commodity in a marketdesigned to be as competitive as possible. The quality and nutritionalvalue of food, and its social and environmental sustainability becomesecondary priorities to profit.</p>
+							<p class="fs-4">Around the world, a growing number of organisations and movements ischallenging the structures of food imperialism. Central to thisresistance is the food sovereignty movement, spearheaded by <a href="https://viacampesina.org/en/">La Vía Campesina</a>, which unitessmall-scale farmers, indigenous communities, and rural workers in aglobal effort to reclaim regional control over food systems. Events likethe <a href="https://nyeleniglobalforum.org/">Nyéléni Forum</a> providevital international platforms for developing collective strategies,uniting grassroots actors from across the world. Indigenous-ledinitiatives such as the <a href="https://sogoreate-landtrust.org/">Sogorea Te’ Land Trust</a> andZapatista communities offer tangible examples of resistance through land<em>rematriation</em> and the revival of traditional food pathways,emphasising the inseparability of land, culture, and sustenance.</p>
+							<p class="fs-4">Agroecological and solidarity-based alternatives are also gainingground, challenging the extractive nature of industrial agriculture.Initiatives like <a href="https://landscapes.global/partnership/alvelal/">Alvelal inSpain</a>, <a href="https://navdanya.org/">Navdanya in India</a> and <a href="https://www.agroecology-europe.org/">Agroecology Europe</a>promote farming systems rooted in biodiversity, community knowledge, andseed sovereignty. In parallel, alternative food networks providedecentralised, democratic models of food production and distributionthat intentionally bypass corporate control. These efforts are supportedby legal and political advocacy organisations such as <a href="https://www.fian.org/en/right-to-food-make-it-happen/">FIANInternational</a> and the <a href="https://www.foodsovereignty.org/">International Planning Committeefor Food Sovereignty</a>, which aim to defend food as a human right andamplify peasant voices in global governance spaces. Meanwhile,educational and cultural resistance - from seed libraries and heritagefood preservation to critical media like <em><a href="https://www.antsandgrasshopper.org/">The Ants and theGrasshopper</a></em> film - play a crucial role in shifting publicnarratives and revaluing diverse, locally rooted food traditions.Together, these movements form a multifaceted response to foodimperialism, aiming not just to reform, but to transform foodsystems.</p>
+							<p class="fs-4">Individual actions are likely not to have the power to drive thelevel of systemic change needed to remove imperialism from our foodsystems. That power and responsibility lies with those profiteering fromthe exploitation inherent within them, and the governments that permittheir actions. However, grassroots organisations are working to holdthem to account and provide alternative solutions. Our responsibility,as consumers, lies in supporting these organisations and closing ourattitude-behaviour gap - perhaps not to expect the latter to drivechange, but at least to live according to our moral compass.</p>
+						</div>
+						<div class="container-xxl fs-1" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="pt-xxl-12 pt-xl-12 pt-12 pt-sm-12 pt-md-12 pt-lg-12 subheading">Conclusions</h2>
+							<p class="fs-4"><em>Food Imperialism</em> - the outsourcing of food production topoorer nations that deal with the resultant social and environmentalimpacts - exists across most of our food supply chains, but perhaps nonemore clearly than the story of <em>The Salmon and the Tomato</em>. It iscorporate greed - treating food as a means of generating profit - thatis the root cause. Big corporations maximise their profits by usingscale to ensure very small margins on their sales oust their competitorsfrom the market. This drive to the bottom, pricewise, passes on costs tofood and feed producers, who are then given little choice but to exploitthe nature and people at their disposal. Meanwhile, these activities arepassed off as ‘increasing efficiency’, ‘growing economies’ and ‘givingcustomers what they want’.</p>
+							<p class="fs-4"><a href="https://feedbackglobal.org/blue-empire-how-your-supermarket-salmon-is-impacting-communities-in-west-africa/">Evidenceexists</a> that demonstrates a linkage between the salmon farming industryin Northern Europe and overexploitation of fisheries in West Africa.<a href="https://www.tandfonline.com/doi/abs/10.1080/03056244.2022.2186599">Evidencealso shows</a> that people from these countries migrate to Europe and end upworking in exploitative industries, including the greenhouse agriculturein Almería, where theywork and live in <a href="https://www.sav.sk/journals/uploads/02031233Checa%20a%20Arjona.pdf">precarious, dangerous, and unhealthyconditions</a>.</p>
+							<p class="fs-4">It is difficult to foresee a future for intensive food productionsystems that does not involve some form of social or environmentalexploitation, since the primary purpose of this industry is profitgeneration. The neoliberalist prerogative of shareholder profiteeringdrives exploitation of finite resources - whether human orenvironmental. We must embrace food production systems that centre onsocial and environmental sustainability, perhaps starting with aninstitutional and cultural responsibility for the systems that feel thebrunt of our continued exploitation.</p>
+							<p class="fs-4"><i>Our global food system is not broken, it is functioning exactly asdesigned: to serve profit over people. But those designs can berewritten</i>.</p>
+							<p class="fs-4">Much can change if we shift our gaze from viewing food as commodityto appreciating food as a relationship: one that is grounded insovereignty, self-determination, and commensality. These values havelong existed outside imperial supply chains, sustained by communitieswho resist exploitation.</p>
+							<p class="fs-4">This is not about perfection, but direction. It is about aligningaction with our collective moral compass, and solidarity with thosepeople stuck in a damaging system created by our society.</p>
+							<p class="fs-4">What changes might we need to support food sovereignty in WestAfrica? How might we ensure marine environments here are preserved andfish populations sustained? We must take back control of the food we eatand how it is made, reshaping the world free from Imperial,profit-centred influence.</p>
+						</div>
+					</div>
+					<img src="i/dji202504261650420977d.jpg" srcset="i/dji202504261650420977d.jpg 2x" alt="" class="img-fluid px-xxl-0 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-0">
+					<p class="fs-5"><i>An automated salmon farm in a loch in Scotland</i></p>
+				</header>
+				<!-- Footer 1 -->
+					<footer class="bg-bg-3 py-8">
+						<div class="container">
+							<div class="row mb-4">
+								<div class="mb-md-0 mb-8 col-md-4">
+									<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+								</div>
+								<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+									<h5 class="mb-4">Outputs</h5>
+									<a href="books.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Books</a>
+									<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Exhibition</a>
+									<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Films</a>
+								</div>
+								<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+									<h5 class="mb-4">Articles</h5>
+									<a href="research.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Research</a>
+									<a href="journalism.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Journalism</a>
+									<a href="see.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Photo essays</a>
+								</div>
+								<div class="mb-sm-8 mb-sm-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="400">
+									<h5 class="mb-4">About</h5>
+									<a href="about.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The project</a>
+									<a href="team.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The team</a>
+									<a href="contact.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Contact us</a>
+								</div>
+								<div class="col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="500">
+									<h5 class="mb-4">Follow us</h5>
+									<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.instagram.com/nealhaddaway.photography" target="_blank">Instagram</a>
+									<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.linkedin.com/in/neal-haddaway-0346954a/" target="_blank">LinkedIn</a>
+									<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://medium.com/@nealhaddaway">Medium</a>
+								</div>
+							</div>
+							<p class="fs-5 mb-0" data-aos="fade-down" data-aos-delay="650">Copyright © 2026 Neal Haddaway</p>
+						</div>
+					</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		
+		<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+		<script src="js/scripts.min.js"></script>
+
+	</body>
+</html>
