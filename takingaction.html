@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Take action</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon-default.png">
+		<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet">
+		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+		<link href="css/styles.min.css" rel="stylesheet" />
+		<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<!-- Page custom CSS -->
+		<style>
+.image-container {
+  position: relative; /* establishes positioning context */
+  width: 100%;
+  height: 100%;      /* adjust as needed */
+  overflow: hidden;   /* optional: prevents content from spilling */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* makes image cover container */
+}
+
+.text-overlay {
+  position: absolute; /* allows it to float on top */
+  top: 50%;           /* vertical center */
+  left: 50%;          /* horizontal center */
+  z-index: 10;        /* higher than image */
+  color: white;
+  text-align: center;
+}
+		</style>
+		<!-- Open graph settings (social networks sharing settings) -->
+		<meta name='twitter:card' content='summary_large_image'>
+		<!-- Open graph settings end -->
+	</head> 
+	<body>
+
+<!-- Navigation 2 -->
+	<nav class="bg-bg-3 sticky-top py-4 py-lg-7" style="padding-right: 0px; margin-right: 0px;">
+		<div class="d-block d-lg-none">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-3" data-aos="fade-down" data-aos-delay="0">
+						<a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-8x70cy62"><svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1"><path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z"></path></svg></a>
+					</div>
+					<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+						<a href="#"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-3" data-aos="fade-down" data-aos-delay="500">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-8x70cy62" aria-modal="true" role="dialog">
+			<div class="offcanvas-header">
+				<a href="#"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid"></a>
+				<a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas"><svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2"><path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"></path></svg></a>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<a href="learn.html" class="fw-bold text-dark-1 py-2 d-inline-block">Learn</a>
+				</div>
+				<div>
+					<a href="see.html" class="fw-bold text-dark-1 py-2 d-inline-block">See</a>
+				</div>
+				<div>
+					<a href="read.html" class="fw-bold text-dark-1 py-2 d-inline-block">Read</a>
+				</div>
+				<div>
+					<a href="listen.html" class="fw-bold text-dark-1 py-2 d-inline-block">Listen</a>
+				</div>
+				<div>
+					<a href="experience.html" class="fw-bold text-dark-1 py-2 d-inline-block">Experience</a>
+				</div>
+				<div>
+					<a href="join.html" class="fw-bold text-dark-1 py-2 d-inline-block">Join</a>
+				</div>
+			</div>
+		</div>
+		<div class="d-none d-lg-block">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-2">
+						<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-8 d-flex justify-content-end">
+						<a href="learn.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="150">Learn</a>
+						<a href="see.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="150">See</a>
+						<a href="read.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Read</a>
+						<a href="listen.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">Listen</a>
+						<a href="experience.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">Experience</a>
+						<a href="join.html" class="fw-bold text-dark-1 ms-4" data-aos="fade-down" data-aos-delay="500" draggable="true">Join</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<script data-goatcounter="https://thesalmonandthetomato.goatcounter.com/count" async="" src="//gc.zgo.at/count.js">
+			</script>
+		</div>
+	</nav>
+	<!-- Header 2 -->
+		<header class="py-20 bg-bg-3 text-center">
+			<div class="container">
+				<h2 class="display-3 mb-4 mb-xl-6" data-aos="fade-down" data-aos-delay="0">Take action</h2>
+				<p class="fs-1 mb-6 mb-md-8 remove-br" data-aos="fade-down" data-aos-delay="250">It can often seem overwhelming thinking about food systems. <br>What can we do to drive and support change?<br><br>We've collated some ideas of things that consumers, retailers, producers, and policy-makers<br>can do to reduce the social and environmental impacts of our food system,<br>and pave the way for a new, fairer one.</p>
+			</div>
+		</header>
+		<!-- Content 13 -->
+			<section class="py-10 py-lg-20 text-center bg-bg-3">
+				<div class="container">
+					<div class="row">
+						<div class="mb-8 col-xl-3 col-sm-6" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="mb-4 mb-xl-6 display-6 text-grey">Consumers</h2>
+							<a href="#consumers" class="btn btn-salmon text-bg-3">What should I buy?</a>
+						</div>
+						<div class="mb-8 col-xl-3 col-sm-6" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="mb-4 mb-xl-6 display-6 text-grey">Retailers</h2>
+							<a href="#retailers" class="btn btn-salmon text-bg-3">What should I sell?</a>
+						</div>
+						<div class="mb-8 col-xl-3 col-sm-6" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="mb-4 mb-xl-6 display-6 text-grey">Producers</h2>
+							<a href="#producers" class="btn btn-salmon text-bg-3">What should I grow?</a>
+						</div>
+						<div class="mb-8 col-xl-3 col-sm-6" data-aos="fade-down" data-aos-delay="0">
+							<h2 class="mb-4 mb-xl-6 display-6 text-grey">Policy-makers</h2>
+							<a href="#policymakers" class="btn btn-salmon text-bg-3">How should we govern?</a>
+						</div>
+					</div>
+				</div>
+				<div class="mt-xxl-20 mt-md-12 mt-sm-12 mt-lg-20 mt-xl-20">
+					<hr>
+				</div>
+			</section>
+			<!-- Call to action 12 -->
+				<section class="bg-bg-3 py-10 py-lg-20" id="consumers">
+					<div class="container">
+						<div class="row justify-content-lg-center">
+							<div class="col-md-8 col-lg-6 col-xl-5">
+								<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">How can I make better choices about the food that I buy?</h2>
+								<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">Often we have too much choice, but sometimes too little. How do we know what foods are best when the impacts are typically hidden?</p>
+								<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">Now that you know more about the impacts of salmon farming and greenhouse horticulture in Spain, what should you do about it?</p>
+								<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">We've summarised what we know about salmon farming and greenhouse horticulture to help you to decide what to  buy.</p>
+								<div class="mb-4 row" data-aos="fade-down" data-aos-delay="400">
+									<div>
+									</div>
+								</div>
+								<img src="i/consumers.jpeg" srcset="i/consumers.jpeg 2x" alt="" class="img-fluid" draggable="true">
+							</div>
+							<div class="col-lg-1">
+							</div>
+							<div class="mt-lg-0 mt-12 col-xl-4 col-lg-5 col-md-7 col-sm-10">
+								<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="500">
+									<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+										<!-- Outer diamond -->
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+											</path>
+											<!-- Fork -->
+												<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+												</path>
+												<!-- Knife -->
+													<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+													</path>
+												</svg>
+												<h5 class="mb-2">Avoid farmed fish</h5>
+												<p class="mb-8">Fish farming has wide-ranging negative impacts, and cheap fish means someone else pays.  Eat other sources of protein, like plants or legumes.</p>
+											</div>
+											<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="650">
+												<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+													<!-- Outer diamond -->
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+														</path>
+														<!-- Fork -->
+															<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+															</path>
+															<!-- Knife -->
+																<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+																</path>
+															</svg>
+															<h5 class="mb-2">Choose a diverse diet</h5>
+															<p class="mb-8">Eating a diversity of different things isn't only good for your health, it also reduces your reliance on any single supply chain.</p>
+														</div>
+														<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="750">
+															<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																<!-- Outer diamond -->
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																	</path>
+																	<!-- Fork -->
+																		<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+																		</path>
+																		<!-- Knife -->
+																			<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+																			</path>
+																		</svg>
+																		<h5 class="mb-2">Don't waste food</h5>
+																		<p class="mb-8">Make sure you only buy what you know you will eat. If in doubt, pop it in the freezer for later!</p>
+																	</div>
+																	<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="900">
+																		<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																			<!-- Outer diamond -->
+																				<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																				</path>
+																				<!-- Fork -->
+																					<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+																					</path>
+																					<!-- Knife -->
+																						<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+																						</path>
+																					</svg>
+																					<h5 class="mb-2">Buy direct</h5>
+																					<p class="mb-8">If you can afford and access it, buy direct from producers, ensuring they get a fair price and can pass on profits to pay their workers well.</p>
+																				</div>
+																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1000">
+																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																						<!-- Outer diamond -->
+																							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																							</path>
+																							<!-- Fork -->
+																								<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+																								</path>
+																								<!-- Knife -->
+																									<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+																									</path>
+																								</svg>
+																								<h5 class="mb-2">Write to your MP</h5>
+																								<p class="mb-8">Use our <a href="https://thesalmonandthetomato.org/files/Letter_to_MPs.docx" target="_blank">sample letter</a> to tell your MP how you feel about the food that is being grown and sold in your area.</p>
+																							</div>
+																							<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1150">
+																								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																									<!-- Outer diamond -->
+																										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																										</path>
+																										<!-- Fork -->
+																											<path d="M13 8.5
+       C13 8.2 13.25 8 13.5 8
+       C13.75 8 14 8.2 14 8.5V13
+       H14.5V8.5
+       C14.5 8.2 14.75 8 15 8
+       C15.25 8 15.5 8.2 15.5 8.5V13
+       H16V8.5
+       C16 8.2 16.25 8 16.5 8
+       C16.75 8 17 8.2 17 8.5V13
+       C17 14.1 16.2 14.8 15 15V23
+       C15 23.55 14.55 24 14 24
+       C13.45 24 13 23.55 13 23V15
+       C11.8 14.8 11 14.1 11 13V8.5Z" fill="#FFFFFF">
+																											</path>
+																											<!-- Knife -->
+																												<path d="M19 8
+       C20.4 8.4 21.5 10.2 21.5 12.2V23
+       C21.5 23.55 21.05 24 20.5 24
+       C19.95 24 19.5 23.55 19.5 23V14
+       L18.5 13.2V9
+       C18.5 8.4 18.7 8.1 19 8Z" fill="#FFFFFF">
+																												</path>
+																											</svg>
+																											<h5 class="mb-2">Have conversations</h5>
+																											<p class="mb-0">Talk to friends and family about the food you buy, where it comes from, and how it is produced. This is how democratic food systems begin!</p>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="mt-xxl-20 mt-md-12 mt-sm-12 mt-lg-20 mt-xl-20">
+																								<hr>
+																							</div>
+																						</section>
+																						<!-- Call to action 12 -->
+																							<section class="bg-bg-3 py-10 py-lg-20" id="retailers">
+																								<div class="container">
+																									<div class="row justify-content-lg-center">
+																										<div class="col-md-8 col-lg-6 col-xl-5">
+																											<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">How can we tell what products to stock?</h2>
+																											<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">You want to provide consistent produce to your customers at an affordable price, but how can you be sure that your procurement choices are free from social and environmental risks?</p>
+																											<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">We've provided some advice on how you can find out more about the impacts of the products you stock on your shelves.</p>
+																											<div class="mb-4 row" data-aos="fade-down" data-aos-delay="400">
+																												<div>
+																												</div>
+																											</div>
+																											<img src="i/greenhouses1.jpg" srcset="i/greenhouses1.jpg 2x" alt="" class="img-fluid">
+																										</div>
+																										<div class="col-lg-1">
+																										</div>
+																										<div class="mt-lg-0 mt-12 col-xl-4 col-lg-5 col-md-7 col-sm-10">
+																											<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="500">
+																												<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																													<!-- Outer diamond -->
+																														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																														</path>
+																														<!-- Basket body -->
+																															<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																															</path>
+																															<!-- Basket handle -->
+																																<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																</path>
+																																<!-- Basket slats -->
+																																	<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																	</rect>
+																																	<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																	</rect>
+																																	<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																	</rect>
+																																</svg>
+																																<h5 class="mb-2">Don't sell salmon</h5>
+																																<p class="mb-8">Salmon farming has huge negative impacts. Stock only wild fish or, better yet, plant-based alternatives.</p>
+																															</div>
+																															<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="650">
+																																<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																																	<!-- Outer diamond -->
+																																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																																		</path>
+																																		<!-- Basket body -->
+																																			<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																																			</path>
+																																			<!-- Basket handle -->
+																																				<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																				</path>
+																																				<!-- Basket slats -->
+																																					<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																					</rect>
+																																					<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																					</rect>
+																																					<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																					</rect>
+																																				</svg>
+																																				<h5 class="mb-2">Research certification schemes</h5>
+																																				<p class="mb-8">Many certification schemes are insufficiently policed or facilitate greenwashing. Research the schemes and their criticisms carefully.</p>
+																																			</div>
+																																			<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="750">
+																																				<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																																					<!-- Outer diamond -->
+																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																																						</path>
+																																						<!-- Basket body -->
+																																							<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																																							</path>
+																																							<!-- Basket handle -->
+																																								<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																								</path>
+																																								<!-- Basket slats -->
+																																									<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																									</rect>
+																																									<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																									</rect>
+																																									<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																									</rect>
+																																								</svg>
+																																								<h5 class="mb-2">Source direct</h5>
+																																								<p class="mb-8">Find producers who you can buy from directly, giving them a fairer price and facilitating supply chain transparency for you.</p>
+																																							</div>
+																																							<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="900">
+																																								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																																									<!-- Outer diamond -->
+																																										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																																										</path>
+																																										<!-- Basket body -->
+																																											<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																																											</path>
+																																											<!-- Basket handle -->
+																																												<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																												</path>
+																																												<!-- Basket slats -->
+																																													<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																													</rect>
+																																													<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																													</rect>
+																																													<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																													</rect>
+																																												</svg>
+																																												<h5 class="mb-2">Promote transparency</h5>
+																																												<p class="mb-8">Demonstrate in-store that you are thinking carefully about the impacts of your supply chains, for example by displaying farmer information alongside produce.</p>
+																																											</div>
+																																											<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1000">
+																																												<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																																													<!-- Outer diamond -->
+																																														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																																														</path>
+																																														<!-- Basket body -->
+																																															<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																																															</path>
+																																															<!-- Basket handle -->
+																																																<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																																</path>
+																																																<!-- Basket slats -->
+																																																	<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																																	</rect>
+																																																	<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																																	</rect>
+																																																	<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																																	</rect>
+																																																</svg>
+																																																<h5 class="mb-2">Collaborate on storytelling</h5>
+																																																<p class="mb-8">Work with groups like <a href="https://thesalmonandthetomato.org/join">The Salmon and the Tomato</a> to raise awareness about food system impacts amongst your customers.</p>
+																																															</div>
+																																															<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1150">
+																																																<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon">
+																																																	<!-- Outer diamond -->
+																																																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="E94E1B">
+																																																		</path>
+																																																		<!-- Basket body -->
+																																																			<path d="M9.5 14
+       H23.5
+       L22.2 23
+       C22.15 23.55 21.7 24 21.15 24
+       H11.85
+       C11.3 24 10.85 23.55 10.8 23
+       L9.5 14Z" fill="#FFFFFF">
+																																																			</path>
+																																																			<!-- Basket handle -->
+																																																				<path d="M12.5 14
+       C12.7 11.8 14.4 10 16.5 10
+       C18.6 10 20.3 11.8 20.5 14
+       H19.5
+       C19.3 12.7 18.1 11.7 16.5 11.7
+       C14.9 11.7 13.7 12.7 13.5 14
+       H12.5Z" fill="#FFFFFF">
+																																																				</path>
+																																																				<!-- Basket slats -->
+																																																					<rect x="12.5" y="16" width="1.2" height="6" fill="E94E1B">
+																																																					</rect>
+																																																					<rect x="15.4" y="16" width="1.2" height="6" fill="E94E1B">
+																																																					</rect>
+																																																					<rect x="18.3" y="16" width="1.2" height="6" fill="E94E1B">
+																																																					</rect>
+																																																				</svg>
+																																																				<h5 class="mb-2">Audit your supply chains</h5>
+																																																				<p class="mb-0">Spend time examining where you source your produce from and the potential impacts those producers might have on people and the environment.</p>
+																																																			</div>
+																																																		</div>
+																																																	</div>
+																																																</div>
+																																																<div class="mt-xxl-20 mt-md-12 mt-sm-12 mt-lg-20 mt-xl-20">
+																																																	<hr>
+																																																</div>
+																																															</section>
+																																															<!-- Call to action 12 -->
+																																																<section class="bg-bg-3 py-10 py-lg-20" id="producers">
+																																																	<div class="container">
+																																																		<div class="row justify-content-lg-center">
+																																																			<div class="col-md-8 col-lg-6 col-xl-5">
+																																																				<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">How can I produce more ethically?</h2>
+																																																				<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">Producing food can be incredibly challenging—the pressure to provide food at low wholesale prices in a consistent way is particularly challenging. How can you prioritise sustainability of your business whilst trying to act ethically and in an environmentally sustainable way?</p>
+																																																				<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">The advice here can help you to be sure that you are producing food ethically, with minimal impacts on the environment and people. </p>
+																																																				<div class="mb-4 row" data-aos="fade-down" data-aos-delay="400">
+																																																					<div>
+																																																					</div>
+																																																				</div>
+																																																				<img src="i/nrh9620.jpg" srcset="i/nrh9620.jpg 2x" alt="" class="img-fluid" draggable="true">
+																																																			</div>
+																																																			<div class="col-lg-1">
+																																																			</div>
+																																																			<div class="mt-lg-0 mt-12 col-xl-4 col-lg-5 col-md-7 col-sm-10">
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="500">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Pay a fair wage</h5>
+																																																					<p class="mb-8">Ensure all workers receive fair wages and benefits, reflecting the full value of their labour and supporting economic justice in food production.</p>
+																																																				</div>
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="650">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Contribute to community</h5>
+																																																					<p class="mb-8">Engage with local communities by supporting initiatives that strengthen social cohesion, improve food access, and empower stakeholders within the food system.</p>
+																																																				</div>
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="750">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Minimise environmental impacts</h5>
+																																																					<p class="mb-8">Adopt practices that reduce resource use, pollution, and waste, protecting ecosystems and promoting long-term sustainability in production.</p>
+																																																				</div>
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="900">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Provide transparency</h5>
+																																																					<p class="mb-8">Disclose environmental, social, and operational practices openly, enabling accountability and building trust with consumers and stakeholders.</p>
+																																																				</div>
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1000">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Sell direct</h5>
+																																																					<p class="mb-8">Offer products directly to consumers or local markets, strengthening community connections, shortening supply chains, and enabling fairer prices for both producers and buyers.</p>
+																																																				</div>
+																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1150">
+																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																						</path>
+																																																						<circle cx="16.5" cy="18" r="7" fill="#FFFFFF">
+																																																						</circle>
+																																																						<path d="M16.5 11 L17.5 13.5 L20 12.5 L18.5 15 L21 17 L18 17 L16.5 20 L15 17 L12 17 L14.5 15 L13 12.5 L15.5 13.5 Z" fill="#FFFFFF">
+																																																						</path>
+																																																						<path d="M16.5 11 V9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round">
+																																																						</path>
+																																																					</svg>
+																																																					<h5 class="mb-2">Audit your supply chains</h5>
+																																																					<p class="mb-0">Regularly review and assess all stages of your supply chains to ensure ethical practices, traceability, and compliance with social and environmental standards.</p>
+																																																				</div>
+																																																			</div>
+																																																		</div>
+																																																	</div>
+																																																	<div class="mt-xxl-20 mt-md-12 mt-sm-12 mt-lg-20 mt-xl-20">
+																																																		<hr>
+																																																	</div>
+																																																</section>
+																																																<!-- Call to action 12 -->
+																																																	<section class="bg-bg-3 py-10 py-lg-20" id="policymakers">
+																																																		<div class="container">
+																																																			<div class="row justify-content-lg-center">
+																																																				<div class="col-md-8 col-lg-6 col-xl-5">
+																																																					<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">How should we govern food systems ethically and sustainably?</h2>
+																																																					<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">Often policies shape the food system in ways we don’t fully see. Decisions about regulation, incentives, or oversight can have hidden environmental, social, and economic impacts.</p>
+																																																					<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">With a clearer understanding of the impacts of salmon farming and greenhouse horticulture in Spain, you can design measures that reduce environmental harm, strengthen social and labour protections, and encourage sustainable, equitable practices. </p>
+																																																					<p class="fs-3 mb-8" data-aos="fade-down" data-aos-delay="250">We’ve summarised the key effects to support evidence-based, effective decision-making.</p>
+																																																					<div class="mb-4 row" data-aos="fade-down" data-aos-delay="400">
+																																																						<div>
+																																																						</div>
+																																																					</div>
+																																																					<img src="i/nrh7202.jpg" srcset="i/nrh7202.jpg 2x" alt="" class="img-fluid">
+																																																				</div>
+																																																				<div class="col-lg-1">
+																																																				</div>
+																																																				<div class="mt-lg-0 mt-12 col-xl-4 col-lg-5 col-md-7 col-sm-10">
+																																																					<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="500">
+																																																						<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																							<!-- Diamond / square frame -->
+																																																								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																								</path>
+																																																								<!-- Scroll / document inside -->
+																																																									<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																									</rect>
+																																																									<!-- Lines on document -->
+																																																										<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																										</line>
+																																																										<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																										</line>
+																																																										<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																										</line>
+																																																										<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																										</line>
+																																																									</svg>
+																																																									<h5 class="mb-2">Implement integrated food policy</h5>
+																																																									<p class="mb-8">Coordinate policies across seafood and greenhouse agriculture to address environmental, social, and economic impacts holistically throughout the food system.</p>
+																																																								</div>
+																																																								<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="650">
+																																																									<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																										<!-- Diamond / square frame -->
+																																																											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																											</path>
+																																																											<!-- Scroll / document inside -->
+																																																												<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																												</rect>
+																																																												<!-- Lines on document -->
+																																																													<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																													</line>
+																																																													<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																													</line>
+																																																													<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																													</line>
+																																																													<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																													</line>
+																																																												</svg>
+																																																												<h5 class="mb-2">Mandate supply chain transparency</h5>
+																																																												<p class="mb-8">Require producers to disclose environmental, social, and labour impacts across salmon and greenhouse operations, enabling accountability and informed policy decisions.</p>
+																																																											</div>
+																																																											<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="750">
+																																																												<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																													<!-- Diamond / square frame -->
+																																																														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																														</path>
+																																																														<!-- Scroll / document inside -->
+																																																															<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																															</rect>
+																																																															<!-- Lines on document -->
+																																																																<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																</line>
+																																																																<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																</line>
+																																																																<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																</line>
+																																																																<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																</line>
+																																																															</svg>
+																																																															<h5 class="mb-2">Legislate circular resource use</h5>
+																																																															<p class="mb-8">Promote and enforce recovery and reuse of nutrients, water, and materials across salmon and greenhouse production to reduce waste and close resource loops.</p>
+																																																														</div>
+																																																														<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="900">
+																																																															<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																																<!-- Diamond / square frame -->
+																																																																	<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																																	</path>
+																																																																	<!-- Scroll / document inside -->
+																																																																		<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																																		</rect>
+																																																																		<!-- Lines on document -->
+																																																																			<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																			</line>
+																																																																			<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																			</line>
+																																																																			<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																			</line>
+																																																																			<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																			</line>
+																																																																		</svg>
+																																																																		<h5 class="mb-2">Support community monitoring</h5>
+																																																																		<p class="mb-8">Support community-led monitoring initiatives that enhance transparency and stakeholder oversight of salmon farming and greenhouse operations.</p>
+																																																																	</div>
+																																																																	<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1000">
+																																																																		<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																																			<!-- Diamond / square frame -->
+																																																																				<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																																				</path>
+																																																																				<!-- Scroll / document inside -->
+																																																																					<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																																					</rect>
+																																																																					<!-- Lines on document -->
+																																																																						<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																						</line>
+																																																																						<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																						</line>
+																																																																						<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																						</line>
+																																																																						<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																						</line>
+																																																																					</svg>
+																																																																					<h5 class="mb-2">Incentivise sustainability</h5>
+																																																																					<p class="mb-8">Encourage sustainable practices by providing targeted incentives for producers who adopt low-impact feed, renewable energy, regenerative agriculture, and waste-reducing techniques.</p>
+																																																																				</div>
+																																																																				<div class="ps-12 position-relative" data-aos="fade-down" data-aos-delay="1150">
+																																																																					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute start-0 fill-salmon stroke-salmon">
+																																																																						<!-- Diamond / square frame -->
+																																																																							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3964 0.87C15.5564 -0.29 17.4364 -0.29 18.5964 0.87L31.6264 13.902C32.7864 15.062 32.7864 16.94 31.6264 18.098L18.5964 31.13C17.4364 32.29 15.5584 32.29 14.4004 31.13L1.36637 18.1C0.805 17.539 0.496094 16.778 0.496094 16.002C0.496094 15.226 0.805 14.465 1.36637 13.904L14.3964 0.87Z" fill="#FFA07A">
+																																																																							</path>
+																																																																							<!-- Scroll / document inside -->
+																																																																								<rect x="11" y="9" width="11" height="14" rx="1" ry="1" fill="#FFFFFF">
+																																																																								</rect>
+																																																																								<!-- Lines on document -->
+																																																																									<line x1="13" y1="12" x2="21" y2="12" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																									</line>
+																																																																									<line x1="13" y1="15" x2="21" y2="15" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																									</line>
+																																																																									<line x1="13" y1="18" x2="21" y2="18" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																									</line>
+																																																																									<line x1="13" y1="21" x2="19" y2="21" stroke="#FFA07A" stroke-width="1.2" stroke-linecap="round">
+																																																																									</line>
+																																																																								</svg>
+																																																																								<h5 class="mb-2">Protect farmworker rights</h5>
+																																																																								<p class="mb-0">Ensure farmworker justice by safeguarding labour rights, improving working conditions, guaranteeing fair wages, and addressing the inequalities created by global food supply chains.</p>
+																																																																							</div>
+																																																																						</div>
+																																																																					</div>
+																																																																				</div>
+																																																																				<div class="mt-xxl-20 mt-md-12 mt-sm-12 mt-lg-20 mt-xl-20">
+																																																																					<hr>
+																																																																				</div>
+																																																																			</section>
+																																																																			<!-- Footer 1 -->
+																																																																				<footer class="bg-bg-3 py-8">
+																																																																					<div class="container">
+																																																																						<div class="row mb-4">
+																																																																							<div class="mb-md-0 mb-8 col-md-4">
+																																																																								<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+																																																																							</div>
+																																																																							<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+																																																																								<h5 class="mb-4">Outputs</h5>
+																																																																								<a href="books.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Books</a>
+																																																																								<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Exhibition</a>
+																																																																								<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Films</a>
+																																																																							</div>
+																																																																							<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+																																																																								<h5 class="mb-4">Articles</h5>
+																																																																								<a href="research.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Research</a>
+																																																																								<a href="journalism.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Journalism</a>
+																																																																								<a href="see.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Photo essays</a>
+																																																																							</div>
+																																																																							<div class="mb-sm-8 mb-sm-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="400">
+																																																																								<h5 class="mb-4">About</h5>
+																																																																								<a href="about.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The project</a>
+																																																																								<a href="team.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The team</a>
+																																																																								<a href="contact.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Contact us</a>
+																																																																							</div>
+																																																																							<div class="col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="500">
+																																																																								<h5 class="mb-4">Follow us</h5>
+																																																																								<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.instagram.com/nealhaddaway.photography" target="_blank">Instagram</a>
+																																																																								<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.linkedin.com/in/neal-haddaway-0346954a/" target="_blank">LinkedIn</a>
+																																																																								<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://medium.com/@nealhaddaway">Medium</a>
+																																																																							</div>
+																																																																						</div>
+																																																																						<p class="fs-5 mb-0" data-aos="fade-down" data-aos-delay="650">Copyright © 2026 Neal Haddaway</p>
+																																																																					</div>
+																																																																				</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		
+		<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+		<script src="js/scripts.min.js"></script>
+
+	</body>
+</html>
