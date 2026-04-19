@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Edible Empire</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon-default.png">
+		<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet">
+		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+		<link href="css/styles.min.css" rel="stylesheet" />
+		<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<!-- Page custom CSS -->
+		<style>
+.image-container {
+  position: relative; /* establishes positioning context */
+  width: 100%;
+  height: 100%;      /* adjust as needed */
+  overflow: hidden;   /* optional: prevents content from spilling */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* makes image cover container */
+}
+
+.text-overlay {
+  position: absolute; /* allows it to float on top */
+  top: 50%;           /* vertical center */
+  left: 50%;          /* horizontal center */
+  z-index: 10;        /* higher than image */
+  color: white;
+  text-align: center;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+		</style>
+		<!-- Open graph settings (social networks sharing settings) -->
+		<meta name='twitter:card' content='summary_large_image'>
+		<!-- Open graph settings end -->
+	</head> 
+	<body>
+
+<!-- Navigation 2 -->
+	<nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+		<div class="d-block d-lg-none">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-3" data-aos="fade-down" data-aos-delay="0">
+						<a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-8x70cy62"><svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1"><path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z"></path></svg></a>
+					</div>
+					<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+						<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-3" data-aos="fade-down" data-aos-delay="500">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-8x70cy62" aria-hidden="true">
+			<div class="offcanvas-header">
+				<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid"></a>
+				<a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas"><svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2"><path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"></path></svg></a>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					<a href="learn.html" class="fw-bold text-dark-1 py-2 d-inline-block">Learn</a>
+				</div>
+				<div>
+					<a href="see.html" class="fw-bold text-dark-1 py-2 d-inline-block">See</a>
+				</div>
+				<div>
+					<a href="read.html" class="fw-bold text-dark-1 py-2 d-inline-block">Read</a>
+				</div>
+				<div>
+					<a href="listen.html" class="fw-bold text-dark-1 py-2 d-inline-block">Listen</a>
+				</div>
+				<div>
+					<a href="experience.html" class="fw-bold text-dark-1 py-2 d-inline-block">Experience</a>
+				</div>
+				<div>
+					<a href="join.html" class="fw-bold text-dark-1 py-2 d-inline-block">Join</a>
+				</div>
+			</div>
+		</div>
+		<div class="d-none d-lg-block">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-2">
+						<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+					</div>
+					<div class="col-8 d-flex justify-content-end">
+						<a href="learn.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="150">Learn</a>
+						<a href="see.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">See</a>
+						<a href="read.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">Read</a>
+						<a href="listen.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="500">Listen</a>
+						<a href="experience.html" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="650">Experience</a>
+						<a href="join.html" class="fw-bold text-dark-1 ms-4" data-aos="fade-down" data-aos-delay="750">Join</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Feature 16 -->
+		<section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+					<h1 class="fw-bold mb-6 display-3" data-aos="fade-down" data-aos-delay="0">EDIBLE EMPIRE</h1>
+					<p class="mb-15 fs-1" data-aos="fade-down" data-aos-delay="250"><i>a podcast about the hidden costs of our food</i></p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row justify-content-center justify-content-lg-start">
+					<div class="mb-8 mb-lg-0 col-sm-8 col-md-4">
+						<img src="i/logo new new.png" srcset="i/logo new new.png 2x" alt="" class="img-fluid w-100" data-aos="fade-down" data-aos-delay="250">
+					</div>
+					<div class="col-lg-1 col-xxl-1">
+					</div>
+					<div class="col-sm-10 col-xxl-6 col-lg-6 col-md-8">
+						<div class="mb-12" data-aos="fade-down" data-aos-delay="150">
+							<h5 class="mb-4">Curious about where your food comes from?</h5>
+							<p class="mb-0 fs-4">This podcast dives into how our food is produced</p>
+						</div>
+						<div class="mb-12" data-aos="fade-down" data-aos-delay="250">
+							<h5 class="mb-4">Concerned about the impacts of your food's supply chains?</h5>
+							<p class="mb-0 fs-4">We explore the hidden social and environmental impacts of our food</p>
+						</div>
+						<div data-aos="fade-down" data-aos-delay="400">
+							<h5 class="mb-4">Keen to understand why our food system behaves the way it does?</h5>
+							<p class="mb-0 fs-4" draggable="true">We look at history to understand who holds the power and how we can make the food system fairer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Call to action 1 -->
+			<section class="bg-bg-3 text-center">
+				<div class="container">
+					<div class="row flex-column align-items-center">
+						<div class="col-md-11 col-lg-9 col-xl-8 col-xxl-7">
+						</div>
+					</div>
+					<div class="py-lg-8 py-sm-4">
+						<hr>
+					</div>
+				</div>
+			</section>
+			<!-- Feature 16 -->
+				<section class="bg-bg-3 text-center text-lg-start">
+					<div class="row justify-content-center py-lg-12 py-sm-6">
+						<div class="col-md-10 col-xxl-10 col-xl-10 col-lg-10">
+							<h2 class="fw-bold display-5 mb-6" data-aos="fade-down" data-aos-delay="0" id="titlearea">EDIBLE EMPIRE</h2>
+							<p class="fs-4">Our podcast features 6 episodes that bring together experts from across the world to talk about <a href="foodimperialism.html" targe="_blank">Food Imperialism</a>, the social and environmental costs of our food, and how we can make the food system fairer.</p>
+							<p class="fs-4">Check out the six episodes listed below. Watch out for each episode and the individual expert interviews.</p>
+							<div class="accordion" id="custom-id-a1raqnz1">
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-rf2zyhy3" aria-expanded="true">Prologue</button>
+									</div>
+									<div id="custom-id-rf2zyhy3" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">Have you ever wondered why your french beans from Kenya are cheaper than locally produced ones? Where do tomatoes come from in the middle of December? Or how salmon is cheaper now than it used to be?</p>
+											<p class="fs-4">This podcast series dives into the hidden world of food - how it’s produced, traded and consumed across the globe. Across this series of episodes, we’ll discuss everything from Norwegian salmon to New Zealand dairy, and how their supply chains and politics affects people continents away.</p>
+											<p class="fs-4">We’ll uncover hidden details about the extent of food trade pressures on poorer nations and peoples, and see how this practice has a long and dark history of exploitation and extraction. </p>
+											<p class="mb-0 fs-4">– Neal Haddaway, Benjamin Eitelberg, Emma Strutt, with editing from Kelly Allum</p>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/2b5a7783-copy-2-1766678700.jpeg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Neal Haddaway</h5>
+														<p class="mb-4">Co-host</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/benjamin.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Benjamin Eitelberg</h5>
+														<p class="mb-4">Co-host</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="300">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/emma.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Emma Strutt</h5>
+														<p class="mb-4">Co-host</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="400">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/kelly.png" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Kelly Allum</h5>
+														<p class="mb-4">Editor</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-m1pwtdfm" aria-expanded="true">Episode 1: What is food imperialism?</button>
+									</div>
+									<div id="custom-id-m1pwtdfm" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">Where does our food come from? Who works in the fields that produce our fruit and vegetables? Who is making profit from the food we eat? This episode sets the scene for the series, introducing the concept of food supply chains—the intricate trade routes that keep supermarket shelves stocked with produce all year round. But how did these global networks come to be? Tracing the history of our globalised food systems, we uncover why our food systems look the way they do today.</p>
+											<p class="fs-4">Featuring:<br>– Dr Raj Patel<br>– Prof Harriet Friedmann</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/harrietfriedmann.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Harriet Friedmann</h5>
+														<p class="mb-4">Professor Emerita, University of Toronto</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/rajpatel.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Raj Patel</h5>
+														<p class="mb-4">Film-maker, academic, author, University of Texas</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-owboci17" aria-expanded="true">Episode 2: Corporate power in the food system</button>
+									</div>
+									<div id="custom-id-owboci17" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">If empires once flew flags, today they file annual reports. This episode examines how large agrifood corporations increasingly function as sovereign actors within global food systems. From controlling vast transnational supply chains and shaping trade rules, to influencing national policy and disciplining labour across borders, corporations now wield powers historically associated with states. Focusing on agribusiness, food traders, and retailers, the episode asks how corporate concentration has reconfigured food imperialism, turning companies into the new “nations” of food empires, and what this means for accountability, democracy, and food sovereignty.</p>
+											<p class="fs-4">Featuring:<br>– Prof Phil Howard<br>– Prof Jennifer Clapp</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/philhoward.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Phil Howard</h5>
+														<p class="mb-4">Professor, Michigan State University</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/jenniferclapp.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Jennifer Clapp</h5>
+														<p class="mb-4">Professor and Canada Research Chair, University of Waterloo</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-vhl3qh3k" aria-expanded="true">Episode 3: Deep roots - a history of oil palm</button>
+									</div>
+									<div id="custom-id-vhl3qh3k" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">Starting with an early example of colonial control of overseas sovereign resources, this episode tracks one of the most ubiquitous ingredients in contemporary food production. It’s something you may not have in your store cupboard, but it’s almost impossible to avoid - palm oil. But where does it come from? When did it start being used in our food? And what is its legacy?</p>
+											<p class="fs-4">Oil palm is endemic to West Africa, but today grows in plantations across the tropics. Prized for its versatility and high yields, oil palm is now in most processed foods and countless cosmetics. Vast plantations have caused serious problems in countries like Indonesia, where native forest is destroyed to make way for huge single-species farms that displace people and destroy biodiversity.</p>
+											<p class="fs-4">But these modern issues stem from a dark history in a country torn apart by genocide and violent displacement - and one of the world’s biggest multinational corporations, Unilever.</p>
+											<p class="fs-4">Featuring:<br>– Prof Jonathan Robins<br>– Farwiza Farhan<br>– Prof Helena Varkkey</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/jonathanrobins.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Jonathan Robins</h5>
+														<p class="mb-4">Associate Professor of Global History, Michigan Technological University</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/farwizafarhan.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Farwiza Farhan</h5>
+														<p class="mb-4">Forest Conservationist, Yayasan HAkA</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="300">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/helenavarkkey.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Helena Varkkey</h5>
+														<p class="mb-4">Associate Professor of Political Ecoogy, University of Malasia</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-f3uhytep" aria-expanded="true">Episode 4: The Salmon and the Tomato</button>
+									</div>
+									<div id="custom-id-f3uhytep" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">What connects salmon farming in northern Europe with tomato farming in southern Spain? These two, seemingly distinct food supply chains ensure that our supermarket shelves are stocked with cheap, year-round food. What we don’t see, however, are the hidden links - the overfishing along the coast of West Africa that destroys local communities’ livelihoods and drives migration to Europe; the dangerous journeys by small boat where 1-in-5 people die; the entrapment of migrants arriving in exploitative agricultural labour in Spain’s intensive greenhouses.</p>
+											<p class="fs-4">This episode examines the story of salmon farming and tomato greenhouses - and highlights the hidden costs of commodified food.</p>
+											<p class="fs-4">Featuring:<br>– Simen Stætre<br>– Hazel Healy and Brigitte Wear<br>– Dr Aliou Ba<br>– María Alonso Martínez</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/simensaetre.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Simen Stætre</h5>
+														<p class="mb-4">Journalist and author of The New Fish</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/hazelhealy.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Hazel Healy</h5>
+														<p class="mb-4">Investigative journalist, DeSmog</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-sm-2 py-lg-4" data-aos="fade-down" data-aos-delay="300">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/brigittewear.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Brigitte Wear</h5>
+														<p class="mb-4">Investigative journalist, DeSmog</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="400">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/aliouba.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Aliou Ba</h5>
+														<p class="mb-4">Oceans Lead, Greenpeace Africa</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="500">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/María Alonso Martínez.png" alt="" class="img-fluid rounded-circle mb-6 w-75">
+														<h5 class="mb-2">María Alonso Martínez</h5>
+														<p class="mb-4">Researcher</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-u8wnsa11" aria-expanded="true">Episode 5: New Zealand dairy and Western Saharan phosphate</button>
+									</div>
+									<div id="custom-id-u8wnsa11" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">New Zealand’s image of clean, green pastures hides one of the world’s most intensive dairy industries. Behind each glass of milk there is a hidden web of global extraction: phosphate mined from occupied Western Sahara, palm kernel imported from deforested Southeast Asia, and polluted rivers flowing through Māori ancestral lands.</p>
+											<p class="fs-4">This episode traces how New Zealand’s dairy boom reshapes both local ecosystems and distant economies, from illegally occupied territories in West Africa to political power in New Zealand. Through the story of “white gold”, we uncover how even the purest landscapes are bound into the machinery of food imperialism.</p>
+											<p class="fs-4">Featuring:<br>– Dr Mike Joy<br>– Dr Milena Bojovic<br>– Dr Crystal Bennes</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/mikejoy.jpg" alt="" class="img-fluid rounded-circle mb-6 w-75">
+														<h5 class="mb-2">Mike Joy</h5>
+														<p class="mb-4">Senior Research Fellow, University of Wellington</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/milenabojovic.jpg" alt="" class="img-fluid rounded-circle mb-6 w-75">
+														<h5 class="mb-2">Milena Bojovic</h5>
+														<p class="mb-4">Lecturer, University of Technology Sydney</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-sm-2 py-lg-4" data-aos="fade-down" data-aos-delay="300">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/crystalbennes.jpg" alt="" class="img-fluid rounded-circle mb-6 w-75">
+														<h5 class="mb-2">Crystal Bennes</h5>
+														<p class="mb-4">Artist and writer</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-5mxth10x" aria-expanded="true">Episode 6: What does a fair food system look like?</button>
+									</div>
+									<div id="custom-id-5mxth10x" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">Having heard about the deep history of extraction and exploitation inherent in globalised food supply chains, what does a fair food system look like? How could we ensure sufficient, diverse food choices for all whilst supporting those who produce it? This episode dives into proposed futures that challenge the intensive nature of traditional agrifood systems and the supply chains that deliver it, eventually, to our homes.</p>
+											<p class="fs-4">Featuring:<br>– Dr Anitra Nelson<br>– Dr Million Belay<br>– Ali Thomas<br>– Chris Smaje</p>
+											<p class="fs-4">Shownotes:<br>xxx</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+											<div class="row justify-content-center py-lg-8 py-sm-4">
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="100">
+													<div class="border rounded-2 p-6 h-100">
+														<img src="i/anitranelson.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Anitra Nelson</h5>
+														<p class="mb-4">Activist-scholar, University of Melbourne</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-lg-4 py-sm-2" data-aos="fade-down" data-aos-delay="200">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/millionbelay.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Million Belay</h5>
+														<p class="mb-4">Co-founder, Alliance for Food Sovereignty in Africa</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-sm-2 py-lg-4" data-aos="fade-down" data-aos-delay="300">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/alithomas.png" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Ali Thomas</h5>
+														<p class="mb-4">Co-founder, Shrewsbury Food Hub</p>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0 py-sm-2 py-lg-4" data-aos="fade-down" data-aos-delay="400">
+													<div class="border rounded-2 border-dark-3 p-6 h-100">
+														<img src="i/chrissmaje.jpg" alt="" class="img-fluid rounded-circle mb-6 w-100">
+														<h5 class="mb-2">Chris Smaje</h5>
+														<p class="mb-4">Writer, small-scale farmer, social scientist</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#custom-id-fpvfjkgo" aria-expanded="true">Epilogue</button>
+									</div>
+									<div id="custom-id-fpvfjkgo" class="accordion-collapse collapse show" data-bs-parent="#custom-id-mcg84ko8">
+										<div class="accordion-body text-start">
+											<p class="fs-4">Join us as we summarise the key insights across our 17 interviews with leading experts from across food systems research and practice.</p>
+											<p class="fs-4">Drawing together insights on history, corporate power, imperialist extractivism, neoliberalism, food waste, social organisation, and activism, we'll aim to answer the question - what does a fair food system look like?</p>
+											<a href="#" class="btn btn-grey">Listen to the episode</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Blog 10 -->
+					<section class="bg-bg-3 py-8">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-10 col-xl-8 col-xxl-7">
+									<h1 class="mb-4 mb-md-8" data-aos="fade-down" data-aos-delay="0">A word about this podcast series</h1>
+									<p class="mb-0 fs-1 text-dark-1" data-aos="fade-down" data-aos-delay="250">This series was developed in partnership with the Planet Pulse Pacific podcast. It has been produced with incredibly generous, voluntary support from Benjamin Eitelberg, Emma Strutt and Kelly Allum, and, of course, all of our guests. Please follow <a href="https://planetpulsepacific.buzzsprout.com/" target="_blank">Planet Pulse Pacific</a> and listen to the podcast on your favourite platform!</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- Footer 1 -->
+						<footer class="bg-bg-3 py-8">
+							<div class="container">
+								<div class="row mb-4">
+									<div class="mb-md-0 mb-8 col-md-4">
+										<a href="index.html"><img src="i/logosmallest.png" srcset="i/logosmall.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+									</div>
+									<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+										<h5 class="mb-4">Outputs</h5>
+										<a href="books.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Books</a>
+										<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Exhibition</a>
+										<a href="experience.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Films</a>
+									</div>
+									<div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+										<h5 class="mb-4">Articles</h5>
+										<a href="research.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Research</a>
+										<a href="journalism.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Journalism</a>
+										<a href="see.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Photo essays</a>
+									</div>
+									<div class="mb-sm-8 mb-sm-0 col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="400">
+										<h5 class="mb-4">About</h5>
+										<a href="about.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The project</a>
+										<a href="team.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">The team</a>
+										<a href="contact.html" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">Contact us</a>
+									</div>
+									<div class="col-md-2 col-sm-6" data-aos="fade-down" data-aos-delay="500">
+										<h5 class="mb-4">Follow us</h5>
+										<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.instagram.com/nealhaddaway.photography" target="_blank">Instagram</a>
+										<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://www.linkedin.com/in/neal-haddaway-0346954a/" target="_blank">LinkedIn</a>
+										<a class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1" href="https://medium.com/@nealhaddaway" draggable="true">Medium</a>
+									</div>
+								</div>
+								<p class="fs-5 mb-0" data-aos="fade-down" data-aos-delay="650">Copyright © 2026 Neal Haddaway</p>
+							</div>
+						</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		
+		<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+		<script src="js/scripts.min.js"></script>
+
+	</body>
+</html>
